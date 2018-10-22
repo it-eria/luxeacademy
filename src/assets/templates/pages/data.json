@@ -1,0 +1,134 @@
+{
+  "p-index": {
+    "head": {
+      "title": "Home page"
+    },
+    "org-header-info-line": {
+      "mol-search-form": true
+    },
+    "org-nav-menu": true,
+    "org-main-slider": {
+      "slider-wrapp": [
+        {
+          "slide-img": "assets/img/slide-1.jpg",
+          "h2-title": "YOU TOOK THE PHOTOS.<br>NOW MAKE THEM SHINE.",
+          "slide-link": "http://google.com"
+        },
+        {
+          "slide-img": "assets/img/slide-1.jpg",
+          "h2-title": "YOU TOOK THE PHOTOS.<br>NOW MAKE THEM SHINE.",
+          "slide-link": "http://google.com"
+        },
+        {
+          "slide-img": "assets/img/slide-1.jpg",
+          "h2-title": "YOU TOOK THE PHOTOS.<br>NOW MAKE THEM SHINE.",
+          "slide-link": "http://google.com"
+        }
+      ]
+    },
+    "org-blocks-under-slider": {
+      "col-item-wrapp": [
+        {
+          "logotype": "assets/img/ico-1.png",
+          "title": "CUTTING EDGE TECHNIQUES",
+          "content": "Stay ahead of the curve. Luxe Academy instructors use the latest and most effective photography and editing techniques."
+        },
+        {
+          "logotype": "assets/img/ico-2.png",
+          "title": "ON-DEMAND CONTENT",
+          "content": "Learn at your own pace with interactive videos and content, accessible from any device, anytime, anywhere."
+        },
+        {
+          "logotype": "assets/img/ico-3.png",
+          "title": "INDUSTRY PROFESSIONALS",
+          "content": "Professional education from a team of credible and seasoned photography industry professionals."
+        },
+        {
+          "logotype": "assets/img/ico-4.png",
+          "title": "LUXE COMMUNITY",
+          "content": "Professional education from a team of credible and seasoned photography industry professionals."
+        }
+      ]
+    },
+    "org-popular-courses": {
+      "course": [
+        {
+          "past-price": "$19.00",
+          "price": "$15.00",
+          "course-url": "http://google.com",
+          "course-img": "assets/img/course.jpg",
+          "course-icon": "assets/img/lr-ico.png",
+          "course-title": "Adobe Lightroom Secrets",
+          "course-author": "Jonathan Veith"
+        },
+  
+        {
+          "past-price": "$19.00",
+          "price": "$15.00",
+          "course-url": "http://google.com",
+          "course-img": "assets/img/course-1.jpg",
+          "course-icon": "assets/img/ps-ico.png",
+          "course-title": "Adobe Lightroom Secrets",
+          "course-author": "Jonathan Veith"
+        },
+  
+        {
+          "past-price": "$19.00",
+          "price": "$15.00",
+          "course-url": "http://google.com",
+          "course-img": "assets/img/course-2.jpg",
+          "course-icon": "assets/img/lr-ico.png",
+          "course-title": "Adobe Lightroom Secrets",
+          "course-author": "Jonathan Veith"
+        },
+  
+        {
+          "past-price": "$19.00",
+          "price": "$15.00",
+          "course-url": "http://google.com",
+          "course-img": "assets/img/course-3.jpg",
+          "course-icon": "assets/img/ps-ico.png",
+          "course-title": "Adobe Lightroom Secrets",
+          "course-author": "Jonathan Veith"
+        },        
+        {
+          "past-price": "$19.00",
+          "price": "$15.00",
+          "course-url": "http://google.com",
+          "course-img": "assets/img/course-5.jpg",
+          "course-icon": "assets/img/photo-ico.png",
+          "course-title": "Adobe Lightroom Secrets",
+          "course-author": "Jonathan Veith"
+        },
+  
+        {
+          "past-price": "$19.00",
+          "price": "$15.00",
+          "course-url": "http://google.com",
+          "course-img": "assets/img/course-6.jpg",
+          "course-icon": "assets/img/lr-ico.png",
+          "course-title": "Adobe Lightroom Secrets",
+          "course-author": "Jonathan Veith"
+        },
+  
+        {
+          "past-price": "$19.00",
+          "price": "$15.00",
+          "course-url": "http://google.com",
+          "course-img": "assets/img/course-7.jpg",
+          "course-icon": "assets/img/lr-ico.png",
+          "course-title": "Adobe Lightroom Secrets",
+          "course-author": "Jonathan Veith"
+        }
+      ]
+    },
+    "foot": {
+      "vendor-scripts": {
+        "jquery": true,
+        "slick-slider": true,
+        "aos": false,
+        "bootstrap": true
+      }
+    }
+  }
+}
