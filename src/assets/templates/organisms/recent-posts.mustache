@@ -1,0 +1,21 @@
+{{#org-recent-posts}}
+    <section class="recent-posts-container">
+        <div class="container">
+            {{> ../molecules/title-h2-default}}
+            <div class="recent-posts-container__wrapper">
+                {{#recent-post}}
+                <div class="recent-posts-container__wrapper__item col-lg-4">
+                    <div>
+                        <a href="{{{link}}}"><img src="{{{img}}}" alt="img"></a>
+                        <div class="post-info">
+                            <a href="{{{link}}}">{{{title}}}</a> 
+                            <span>{{{author}}}</span>
+                        </div>
+                    </div>
+                </div>
+                {{/recent-post}}
+            </div>
+            <a href="#" class="blue-btn-style m-auto btn-margin-top">read more</a>
+        </div>
+    </section>
+{{/org-recent-posts}}

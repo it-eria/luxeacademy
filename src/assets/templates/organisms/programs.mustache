@@ -1,0 +1,18 @@
+{{#org-programs}}
+    <section class="programs-container">
+        <div class="container">
+            {{> ../molecules/title-h2-default}}
+            <div class="programs-wrapper">              
+                {{#program-item}}  
+                <div class="fall-item fall-effect program-item">
+                    <img src="{{{img}}}"/>
+                    <h2 class="h2-program-title">{{{title}}}</h2>
+                    <div class="mask">                                                       
+                        <a href="#" class="blue-btn-style">view course</a>
+                    </div>
+                </div>
+                {{/program-item}}
+            </div>
+        </div>
+    </section>
+{{/org-programs}} 

@@ -1,35 +1,35 @@
 {{#org-popular-courses}}
     <section class="popular-courses">
         <div class="container">
-            <h2 class="title-h2-default">POPULAR COURSES</h2>
+            {{> ../molecules/title-h2-default}}
             <div class="courses-wrapper">
                 {{#course}}
-                <div class="courses-item col-lg-4">
-                    <div class="box-shadow-style">
-                    <div>
-                        <div class="price-item">
-                            <p>{{{past-price}}}</p>
-                            <span>{{{price}}}</span>
+                    <div class="courses-item col-lg-4">
+                        <div class="box-shadow-style">
+                        <div>
+                            <div class="price-item">
+                                <p>{{{past-price}}}</p>
+                                <span>{{{price}}}</span>
+                            </div>
+                            <a href="{{{course-url}}}"><img src="{{{course-img}}}" alt="img"></a>
                         </div>
-                        <a href="{{{course-url}}}"><img src="{{{course-img}}}" alt="img"></a>
-                    </div>
-                    <div class="p-4">
-                        <div class="item-title">
-                            <img src="{{{course-icon}}}" alt="img">
-                            <a href="{{{course-url}}}"><h3>{{course-title}}</h3></a>
-                        </div>
-                        <div class="author-review">
-                            <p>{{{course-author}}}</p>
-                            <div class="review-item">
-                                <img src="assets/img/review.png" alt="img">
+                        <div class="p-md-4 p-2">
+                            <div class="item-title">
+                                <img src="{{{course-icon}}}" alt="img">
+                                <a href="{{{course-url}}}"><h3>{{course-title}}</h3></a>
+                            </div>
+                            <div class="author-review">
+                                <p>{{{course-author}}}</p>
+                                <div class="review-item">
+                                    <img src="assets/img/review.png" alt="img">
+                                </div>
                             </div>
                         </div>
+                        <div class="button-more-slide text-center">
+                            <a class="blue-btn-style m-auto" href="#">View more</a>
+                        </div>  
+                        </div>                  
                     </div>
-                    <div class="button-more-slide text-center">
-                        <a class="blue-btn-style m-auto" href="#">View more</a>
-                    </div>  
-                    </div>                  
-                </div>
                 {{/course}}
             </div>
         </div>

@@ -1,0 +1,20 @@
+{{#org-academy}}
+    <section class="academy-container">
+        <div class="container">
+            {{> ../molecules/title-h2-default}}
+            <div class="academy-wrapper">
+                {{#academy}}
+                <div class="academy-wrapper__item col-lg-6 col-12">
+                    <img src="{{{image}}}" alt="img" />
+                    <div class="academy-wrapper__item__info">
+                        <div>
+                            <span>{{{counter}}}</span>
+                            <h2>{{{subtitle}}}</h2>
+                        </div>                      
+                    </div>
+                </div>
+                {{/academy}}
+            </div>
+        </div>
+    </section>
+{{/org-academy}}

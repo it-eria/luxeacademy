@@ -51,6 +51,9 @@
       ]
     },
     "org-popular-courses": {
+      "mol-title-h2-default": {
+        "title": "POPULAR COURSES"
+      },
       "course": [
         {
           "past-price": "$19.00",
@@ -122,6 +125,112 @@
         }
       ]
     },
+    "org-programs": {
+      "mol-title-h2-default": {
+        "title": "Programs"
+      },
+      "program-item": [
+        {
+          "title": "Beginner",
+          "img": "assets/img/prog-img-1.jpg"
+        },
+        {
+          "title": "LIGHTROOM",
+          "img": "assets/img/prog-img-2.jpg"
+        },
+        {
+          "title": "PHOTOGRAPHY",
+          "img": "assets/img/prog-img-3.jpg"
+        },
+        {
+          "title": "PHOTOSHOP",
+          "img": "assets/img/prog-img-4.jpg"
+        },
+        {
+          "title": "TOOLS",
+          "img": "assets/img/prog-img-5.jpg"
+        }
+      ]
+    },   
+    "org-subscribe": {
+      "mol-title-h2-default": {
+        "title": "BE THE FIRST TO KNOW",
+        "white-text-color": "color-white"
+      },
+      "bg-image": "assets/img/bg-container.jpg",
+      "subtitle": "Sign up to receive the latest news and subscriber-only discounts on Luxe tutorials, presets, actions, and more."
+    },
+    "org-academy": {
+      "mol-title-h2-default": {
+        "title": "THE ACADEMY"
+      },
+      "academy": [
+        {
+          "image": "assets/img/acad-ico-1.png",
+          "counter": "229",
+          "subtitle": "VIDEO <br>TUTORIALS"
+        },
+        {
+          "image": "assets/img/acad-ico-2.png",
+          "counter": "200",
+          "subtitle": "WRITTEN<br>TUTORIALS"
+        },
+        {
+          "image": "assets/img/acad-ico-3.png",
+          "counter": "230,000",
+          "subtitle": "LUXE<br>CUSTOMERS"
+        },
+        {
+          "image": "assets/img/acad-ico-4.png",
+          "counter": "12",
+          "subtitle": "PROFESSIONAL<br>INSTRUCTORS"
+        }
+      ]
+    },
+    "org-recent-posts": {
+      "mol-title-h2-default": {
+        "title": "RECENT POSTS"
+      },
+      "recent-post": [
+        {
+          "img": "assets/img/post-img-1.jpg",
+          "link": "#",
+          "title": "How to Apply Presets in Mobile",
+          "author": "by Maria Frisch"
+        },
+        {
+          "img": "assets/img/post-img-2.jpg",
+          "link": "#",
+          "title": "How to Apply Presets in Mobile",
+          "author": "by Maria Frisch"
+        },
+        {
+          "img": "assets/img/post-img-3.jpg",
+          "link": "#",
+          "title": "How to Apply Presets in Mobile",
+          "author": "by Maria Frisch"
+        },
+        {
+          "img": "assets/img/post-img-4.jpg",
+          "link": "#",
+          "title": "How to Apply Presets in Mobile",
+          "author": "by Maria Frisch"
+        },
+        {
+          "img": "assets/img/post-img-5.jpg",
+          "link": "#",
+          "title": "How to Apply Presets in Mobile",
+          "author": "by Maria Frisch"
+        },
+        {
+          "img": "assets/img/post-img-6.jpg",
+          "link": "#",
+          "title": "How to Apply Presets in Mobile",
+          "author": "by Maria Frisch"
+        }
+      ]
+    },
+    "org-footer": true,
     "foot": {
       "vendor-scripts": {
         "jquery": true,
