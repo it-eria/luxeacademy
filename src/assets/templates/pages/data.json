@@ -330,7 +330,34 @@
         }
       ]
     },
+    "org-footer": true,
+    "foot": {
+      "vendor-scripts": {
+        "jquery": true,
+        "slick-slider": true,
+        "aos": false,
+        "bootstrap": true
+      }
+    }
+  },
 
+  "p-course-single": {
+    "head": {
+      "title": "Home page"
+    },  
+    "org-header-info-line": {
+      "mol-search-form": true
+    },
+    "org-nav-menu": true,
+    "mol-single-page-bg": {
+      "image": "assets/img/single-bg.jpg"
+    },
+    "mol-title-h2-default": {
+      "title": "ADOBE LIGHTROOM SECRETS"
+    },
+    "org-single-courses-content": true,
+    "org-single-courses-sidebar-desctop": true,
+    "org-single-courses-sidebar-mobile": true,
     "org-footer": true,
     "foot": {
       "vendor-scripts": {

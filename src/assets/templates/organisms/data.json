@@ -226,6 +226,9 @@
     ]
   },
   "org-footer": true,
+  "org-single-courses-content": true,
+  "org-single-courses-sidebar-desctop": true,
+  "org-single-courses-sidebar-mobile": true,
 
   "org-courses-filter": true
 }

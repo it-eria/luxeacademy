@@ -823,6 +823,120 @@ body {
   }
 }
 
+.bg-single {
+  img {
+    width: 100%;
+  }
+}
+
+.single-main-video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.sidebar-info {
+  margin-bottom: 30px;
+  &__price-block {
+    p {
+      font-family: Montserrat-Bold;
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      span {
+        font-family: 'Montserrat-Light';
+        font-size: 16px;
+        text-decoration: line-through;
+      }
+
+      .new-price {
+        font-family: 'Montserrat-Bold';
+        font-size: 30px;
+        color: #82aede;
+      }
+
+      a {
+
+      }
+    }
+  }
+
+  ul {
+    padding: 0;
+    margin-top: 30px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 0;
+    li {
+      font-size: 16px;
+      font-family: 'Montserrat-Light';
+      list-style: none;
+      position: relative;
+      padding-left: 20px;
+      margin: 10px 0;
+      &:before {
+        content: '';        
+        width: 12px;
+        display: block;
+        position: absolute;
+        height: 2px;
+        top: 10px;
+        background-color: #82aede;
+        left: 0;
+      }
+    }
+  }
+
+  &__privilages {
+    border-bottom: 1px solid #eee;
+    &__item {
+      display: flex;
+      align-items: center;
+      margin: 20px 0;
+      img {
+        margin-right: 20px;
+      }
+
+      &__info {       
+        span {
+          font-size: 16px;
+          font-family: 'Montserrat-Medium';
+          color: #8d8c92;
+        }
+
+        p {
+          font-size: 16px;
+          font-family: 'Montserrat-Medium';
+          color: #191f26;
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  &__socials {
+    margin-top: 20px;
+    a {
+      margin: 0px 10px;
+      
+      
+      
+      img {
+        transition: all .1s ease-in-out;
+        top: 0;
+        position: relative;
+        &:hover {
+          top: -5px;
+        }
+      }
+    }
+  }
+}
+
+.height-auto {
+  height: auto !important;
+}
 
 
 
@@ -830,8 +944,70 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.desctop-version {
+  display: block;
+}
+
+.mobile-version {
+  display: none;
+}
 
 @media all and (max-width: 992px) {
+  .desctop-version {
+    display: none;
+  }
+
+  .mobile-version {
+    display: block;
+    padding: 0;
+  }
+
+
+  .sidebar-info__privilages__item__info span {
+    font-size: 12px;
+  }
+
+  .sidebar-info__privilages__item__info p {
+    font-size: 12px;
+  }
+
+  .sidebar-info ul li {
+    font-size: 12px;
+  }
+  .sidebar-info__price-block {
+    a {
+      width: 100%;
+      max-width: none;
+    }
+    p {
+      font-size: 16px;
+      span {
+        font-size: 16px;
+      }
+  
+      .new-price {
+        font-size: 18px;
+      }
+    }
+  }
+   
   .subscribe-container {
     margin: 70px 0;
   }

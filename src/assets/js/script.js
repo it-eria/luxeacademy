@@ -27,7 +27,7 @@ $(function () {
 
 
     $('#fix-menu-padding').css({
-        "padding-bottom": $('.nav_wrapper').height() + $('.header-info-line').height() + 'px'
+        "padding-bottom": ($('.nav_wrapper').height() * 2) + $('.header-info-line').height() - 10 + 'px'
     });
 
     if ($(window).width() < 768) {
