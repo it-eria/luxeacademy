@@ -225,5 +225,7 @@
       }
     ]
   },
-  "org-footer": true
+  "org-footer": true,
+
+  "org-courses-filter": true
 }

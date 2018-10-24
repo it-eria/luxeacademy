@@ -239,5 +239,106 @@
         "bootstrap": true
       }
     }
+  },
+
+  "p-courses": {
+    "head": {
+      "title": "Home page"
+    },    
+    "org-header-info-line": {
+      "mol-search-form": true
+    },
+    "org-nav-menu": true,
+    "mol-title-h2-default": {
+      "title": "POPULAR COURSES"
+    },
+    "org-courses-filter": true,
+    "org-popular-courses": {
+      "mol-title-h2-default": {
+        "title": ""
+      },
+
+      "class-unslick": "unclick-slider-event",
+      "course": [
+        {
+          "past-price": "$19.00",
+          "price": "$15.00",
+          "course-url": "http://google.com",
+          "course-img": "assets/img/course.jpg",
+          "course-icon": "assets/img/lr-ico.png",
+          "course-title": "Adobe Lightroom Secrets",
+          "course-author": "Jonathan Veith"
+        },
+  
+        {
+          "past-price": "$19.00",
+          "price": "$15.00",
+          "course-url": "http://google.com",
+          "course-img": "assets/img/course-1.jpg",
+          "course-icon": "assets/img/ps-ico.png",
+          "course-title": "Adobe Lightroom Secrets",
+          "course-author": "Jonathan Veith"
+        },
+  
+        {
+          "past-price": "$19.00",
+          "price": "$15.00",
+          "course-url": "http://google.com",
+          "course-img": "assets/img/course-2.jpg",
+          "course-icon": "assets/img/lr-ico.png",
+          "course-title": "Adobe Lightroom Secrets",
+          "course-author": "Jonathan Veith"
+        },
+  
+        {
+          "past-price": "$19.00",
+          "price": "$15.00",
+          "course-url": "http://google.com",
+          "course-img": "assets/img/course-3.jpg",
+          "course-icon": "assets/img/ps-ico.png",
+          "course-title": "Adobe Lightroom Secrets",
+          "course-author": "Jonathan Veith"
+        },        
+        {
+          "past-price": "$19.00",
+          "price": "$15.00",
+          "course-url": "http://google.com",
+          "course-img": "assets/img/course-5.jpg",
+          "course-icon": "assets/img/photo-ico.png",
+          "course-title": "Adobe Lightroom Secrets",
+          "course-author": "Jonathan Veith"
+        },
+  
+        {
+          "past-price": "$19.00",
+          "price": "$15.00",
+          "course-url": "http://google.com",
+          "course-img": "assets/img/course-6.jpg",
+          "course-icon": "assets/img/lr-ico.png",
+          "course-title": "Adobe Lightroom Secrets",
+          "course-author": "Jonathan Veith"
+        },
+  
+        {
+          "past-price": "$19.00",
+          "price": "$15.00",
+          "course-url": "http://google.com",
+          "course-img": "assets/img/course-7.jpg",
+          "course-icon": "assets/img/lr-ico.png",
+          "course-title": "Adobe Lightroom Secrets",
+          "course-author": "Jonathan Veith"
+        }
+      ]
+    },
+
+    "org-footer": true,
+    "foot": {
+      "vendor-scripts": {
+        "jquery": true,
+        "slick-slider": true,
+        "aos": false,
+        "bootstrap": true
+      }
+    }
   }
 }
