@@ -230,5 +230,6 @@
   "org-single-courses-sidebar-desctop": true,
   "org-single-courses-sidebar-mobile": true,
 
-  "org-courses-filter": true
+  "org-courses-filter": true,
+  "org-single-courses-accordion": true
 }

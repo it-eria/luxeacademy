@@ -938,6 +938,245 @@ body {
   height: auto !important;
 }
 
+.author-info {
+  img {
+    border-radius: 50%;
+    margin-right: 50px;    
+  }
+
+  &__about {    
+    h2 {
+      font-size: 30px;
+      font-family: 'Montserrat-Bold';
+      color: #82aede;
+    }   
+
+    &__courses-counter {
+      display: flex;
+      align-items: center;
+      img {
+        margin-right: 7px;
+      }
+
+      span {
+        font-family: 'Montserrat-Medium';
+        font-size: 20px;
+      }
+    }
+  }
+
+  &__text-content {
+    margin-top: 30px;
+    p {
+      font-family: 'Montserrat-Light';
+      font-size: 16px;
+      color: #000;
+    }
+
+    a {
+      font-family: 'Montserrat-Light';
+      font-size: 16px;
+      color: #82aede;
+      outline: none;
+    }
+
+    strong {
+      font-family: 'Montserrat-Regular';
+      color: #82aede;
+    }
+    
+    h4 {
+      font-size: 20px;
+      font-family: 'Montserrat-Medium';
+      color: #000;
+    }
+
+    ul {
+      padding: 0;
+      margin-top: 10px;
+      padding-bottom: 10px;     
+      margin-bottom: 0;
+      max-width: 50%;      
+      li {
+        font-size: 16px;
+        font-family: Montserrat-Light;
+        list-style: none;
+        position: relative;
+        padding-left: 20px;
+        margin: 10px 0;
+        &:before {
+          content: '';
+          width: 12px;
+          display: block;
+          position: absolute;
+          height: 2px;
+          top: 10px;
+          background-color: #82aede;
+          left: 0;
+        }
+      }
+    }
+  }
+}
+
+.accordion {
+  font-size: 1rem;  
+  margin: 50px auto 0;
+  border-radius: 5px;
+}
+
+.accordion-header {
+  padding: 15px;
+  color: #000;
+  cursor: pointer;
+  font-size: 1.25em;
+  font-weight: 600;
+  transition: all .3s;
+}
+
+.accordion-header:hover {
+  
+  position: relative;
+  z-index: 5;
+}
+
+.accordion-body {
+  
+  color: #3f3c3c;
+  display: none;
+}
+
+.accordion-body__contents {
+  padding: 0 0 20px 100px;
+    font-size: 1rem;
+}
+
+.accordion__item {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.accordion__item.active:last-child .accordion-header {
+  border-radius: none;
+}
+
+.accordion:first-child > .accordion__item > .accordion-header {
+  border-bottom: 1px solid transparent;
+}
+
+.accordion__item .bullet-toggle:after {
+  content: url(../img/triangle-unactive.png);
+  position: relative;
+  margin-right: 15px;
+  -webkit-transition: .3s all;
+  transition: .3s all;
+  -webkit-transform: rotate(0);
+  transform: rotate(0);
+}
+
+.accordion__item.active .bullet-toggle:after {
+  transform: rotate(-180deg);
+}
+
+// NEW ACCORDION
+
+.single-courses-accordion {
+  margin-top: 150px;
+  margin-bottom: 50px;
+  .accordion-main-title {
+    margin-bottom: 30px;
+  }
+
+  .accordion {
+    h4 {
+      font-size: 20px;
+      font-family: 'Montserrat-Bold';
+      color: #82aede;
+    }
+    .accordion__item {
+      box-shadow: 0px 3px 15px #ccc;
+      border: none;
+      margin: 15px 0;
+      .accordion-header {
+        .bullet-toggle {
+          img {
+            width: 25px;            
+            object-fit: contain;
+            margin-right: 12px;
+            border-radius: 0;
+          }
+
+          p {
+            font-size: 18px;
+            font-family: Montserrat-Light;
+            line-height: 30px;
+          }
+        }
+
+        .right-access {
+          .icon-wrap {
+            display: flex;
+            align-items: center;
+            margin-left: 40px;
+            
+            &:last-child {
+              img {
+                margin-right: 0;
+              }
+            }
+            &:first-child {
+              margin-left: 15px;
+              min-width: 125px;
+            }
+            img {
+              width: 19px;            
+              object-fit: contain;              
+              border-radius: 0;
+              margin-right: 10px;              
+            }
+
+            span {
+              font-size: 16px;
+              font-family: 'Montserrat-Light';
+              margin-left: 10px;
+            }
+
+            span.spoiler {
+              background-color: #6b6b71;
+              font-size: 16px;
+              text-transform: uppercase;
+              color: #fff;
+              padding: 5px 10px;
+              font-family: 'Montserrat-Light';
+            }
+          }
+        }
+      }
+      .accordion-body {
+        &__contents {
+          padding: 15px;
+          p {
+
+          }
+
+          a {
+
+          }
+
+          strong {
+
+          }
+
+          video {
+
+          }
+        } 
+      }
+    }
+  }
+}
+
+
 
 
 
@@ -970,6 +1209,32 @@ body {
 }
 
 @media all and (max-width: 992px) {
+
+  .author-info__about h2 {
+    font-size: 20px;
+  }
+
+  .author-info__about__courses-counter span, .author-info__text-content h4 {
+    font-size: 16px;
+  }
+
+  .author-info img {
+    margin-right: 20px;
+    max-width: 100px;
+  }
+
+  .author-info__text-content p, .author-info__text-content a, .author-info__text-content strong, .author-info__text-content ul li {
+    font-size: 12px;
+  }
+
+  .author-info__about__courses-counter img {
+    margin-right: 7px;
+  }
+
+  .author-info__text-content ul {
+    max-width: none;
+  }
+
   .desctop-version {
     display: none;
   }

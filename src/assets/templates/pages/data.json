@@ -358,6 +358,7 @@
     "org-single-courses-content": true,
     "org-single-courses-sidebar-desctop": true,
     "org-single-courses-sidebar-mobile": true,
+    "org-single-courses-accordion": true,
     "org-footer": true,
     "foot": {
       "vendor-scripts": {
