@@ -2,6 +2,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Montserrat-Regular";
+  background-color: #fbfcfb;
 }
 
 .header-info-line {
@@ -72,7 +73,7 @@ body {
   padding: 15px 0;
   background-color: #fff;
   width: 100%;
-  box-shadow: 0px 7px 10px #ccc;
+  box-shadow: 0 2px 15px #333;
   transition: top .5s ease-out;
 }
 
@@ -1023,10 +1024,11 @@ body {
   font-size: 1rem;  
   margin: 50px auto 0;
   border-radius: 5px;
+ 
 }
 
 .accordion-header {
-  padding: 15px;
+  padding: 15px 15px 15px 35px;
   color: #000;
   cursor: pointer;
   font-size: 1.25em;
@@ -1085,6 +1087,9 @@ body {
   margin-bottom: 50px;
   .accordion-main-title {
     margin-bottom: 30px;
+    font-size: 30px;
+    font-family: 'Montserrat-Medium';
+    text-transform: uppercase;
   }
 
   .accordion {
@@ -1107,7 +1112,7 @@ body {
           }
 
           p {
-            font-size: 18px;
+            font-size: 16px;
             font-family: Montserrat-Light;
             line-height: 30px;
           }
@@ -1208,7 +1213,466 @@ body {
   display: none;
 }
 
+
+
+.single-courses-accordion {
+  counter-reset: my-counter;
+}
+
+.single-courses-accordion  > .js-accordion .js-accordion-item:before {
+  counter-increment: my-counter;
+  content: counter(my-counter);
+  position: absolute;
+  top: 17px;
+  left: 15px;
+  font-size: 18px;
+  font-family: 'Montserrat-Medium'; 
+}
+
+.accordion__item {
+  position: relative;
+}
+
+.progress-course {
+  padding: 15px 15px 15px 35px;  
+  box-shadow: 0 3px 15px #ccc;
+  border: none;
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+}
+
+.progress-label {
+  color: #82aede;
+  font-family: 'Montserrat-Light';
+  font-size: 20px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  margin-left: 30px;
+}
+
+.progress-main {
+  display: block;
+  width: 100%;
+  height: 15px;
+  background-color: #e6e6e6;
+}
+.progress-main::-moz-progress-bar { 
+    background: #e6e6e6;
+}
+.progress-main::-webkit-progress-bar {
+    
+  background-color: #e6e6e6;
+}
+.progress-main::-webkit-progress-value {
+    background: #82aede;
+}
+.progress-main::-ms-fill { 
+    background: #82aede;    
+}
+
+
+
+
+
+
+.h3-default {
+  font-size: 30px;
+  font-family: 'Montserrat-Medium';
+  text-transform: uppercase;
+}
+
+.review-block {
+  
+  &__rating {  
+    h2 {
+      font-size: 30px;
+      font-family: 'Montserrat-Light';
+    }
+
+    &__count {
+      font-size: 80px;
+      font-family: Montserrat-Bold;
+      color: #82aede;
+      width: 100%;
+      text-align: center;
+      margin-top: 50px;
+      line-height: 60px;
+      display: block;
+    }
+
+    &__stars {
+      text-align: center;
+      display: block;
+      margin-top: 20px;
+      img {
+
+      }
+
+      p {
+        margin-top: 30px;
+      }
+    }
+  }
+
+  &__progress {
+    h2 {
+      font-size: 30px;
+      font-family: 'Montserrat-Light';
+    }
+
+    &__rate-result {
+      &__item {
+        margin: 10px 0;
+        strong {
+          font-family: 'Montserrat-Regular';
+          font-size: 20px;
+          margin-right: 20px;
+          min-width: 68px;
+        }
+
+        &__progress {
+          width: 185px;
+          margin-right: 20px;
+        }
+
+        span {
+          font-family: 'Montserrat-Light';
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+
+.review-comments {
+  margin-bottom: 60px;
+  margin-top: 60px;
+  &__item {
+    border-top: 1px solid #e1e0e1;
+    padding: 20px 0;
+    &:last-child {
+      border-bottom: 1px solid #e1e0e1;
+    }
+    h5 {
+      font-size: 20px;
+      font-family: 'Montserrat-Medium';
+    }
+
+    .time-and-stars {
+      display: flex;
+      align-items: center;
+      div {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+        img {
+          max-width: 140px;
+
+        }
+      }
+      span {
+        font-family: 'Montserrat-Light';
+        font-size: 16px;
+      }
+    }
+
+    &__content {
+      margin-top: 20px;
+      p, a, strong {
+        font-family: 'Montserrat-Light';
+        font-size: 16px;
+        margin: 0;
+      }
+    }
+  }
+}
+
+.star-rating{
+	font-size: 0;
+}
+.star-rating__wrap{
+	display: inline-block;
+	font-size: 1rem;
+}
+.star-rating__wrap:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+.star-rating__ico{
+	float: right;
+	padding-left: 2px;
+	cursor: pointer;
+  color: #f8f074;
+  margin-bottom: 0;
+}
+.star-rating__ico:last-child{
+	padding-left: 0;
+}
+.star-rating__input{
+	display: none;
+}
+.star-rating__ico:hover:before,
+.star-rating__ico:hover ~ .star-rating__ico:before,
+.star-rating__input:checked ~ .star-rating__ico:before
+{
+	content: "\f005";
+}
+
+
+
+.add-comment-container {
+  padding: 50px 0;
+  background-color: #f4f4f2;
+  .add-comment {
+  
+    h4 {
+      font-family: 'Montserrat-Medium';
+      font-size: 20px;
+      margin-bottom: 25px;
+    }
+  
+    form {
+      width: 100%;
+      max-width: 700px;
+      input {
+        width: calc(50% - 10px);
+        outline: none;
+        padding-left: 20px;
+        height: 30px;
+        border: none;
+      }
+  
+      textarea {
+        width: 100%;
+        outline: none;
+        padding-left: 20px;        
+        border: none;
+      }
+  
+      .review-btn {
+        width: 140px;
+        margin-top: 20px;
+        float: right;
+        background-color: #82aede;
+        color: #fff;
+        font-size: 20px;
+        font-family: 'Montserrat-Regular';
+        text-transform: uppercase;
+        line-height: 33px;
+        padding: 0;
+        cursor: pointer;
+      }
+
+      .rating-choose {
+        margin-top: 35px;
+        margin-bottom: 20px;
+        p {
+          font-family: 'Montserrat-Medium';
+          font-size: 16px;
+          margin-right: 20px;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+
+.view-courses-block {
+  padding: 80px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  h2 {
+    font-size: 66px;
+    color: #fff;
+    font-family: 'Montserrat-Medium';
+    margin-bottom: 30px;
+  }
+
+  p {
+    font-size: 20px;
+    color: #fff;
+    font-family: 'Montserrat-Regular';
+  }
+
+  a {
+    margin-top: 35px;
+  }
+}
+
+
+
+
+
+
 @media all and (max-width: 992px) {
+  .add-comment-container .add-comment form input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .view-courses-block {
+    padding: 30px 0;
+  }
+
+  .footer-container .copyright p {
+    font-size: 12px;
+  }
+
+  .view-courses-block a {
+    margin-top: 5px;
+}
+
+  .view-courses-block {
+    background-position: center;
+  }
+
+  .view-courses-block h2 {
+    font-size: 20px;
+    font-family: 'Montserrat-Medium';
+    margin-bottom: 15px;
+  }
+
+  .view-courses-block p {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .add-comment-container .add-comment h4, .add-comment-container .add-comment form .review-btn {
+    font-size: 16px;
+  }
+  .add-comment-container .add-comment form input, .add-comment-container .add-comment form .rating-choose p, .add-comment-container .add-comment form textarea {
+    font-size: 12px;
+  }
+  .review-comments__item h5 {
+    font-size: 16px;
+  }
+
+  .review-comments__item .time-and-stars div img {
+    max-width: 100px;
+  } 
+
+  .single-courses-accordion .accordion .accordion__item .accordion-header .bullet-toggle p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .review-comments__item__content a, .review-comments__item__content p, .review-comments__item__content strong, .review-comments__item .time-and-stars span {
+    font-size: 12px;
+  }
+  .review-comments__item__content {
+    margin-top: 10px;
+  }
+
+  .single-courses-accordion .accordion .accordion__item .accordion-header .bullet-toggle img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .h3-default {
+    font-size: 20px;
+  }
+
+  .review-block__progress__rate-result__item strong, .review-block__progress__rate-result__item span {
+    font-size: 12px;
+  }
+
+  .review-block__progress__rate-result__item strong {
+    min-width: 45px;
+  }
+
+  .review-block__rating__stars p {
+    font-size: 14px;
+  }
+
+  .review-block__rating h2, .review-block__progress h2 {
+    font-size: 16px;
+  }
+
+  .review-block__rating__count {
+    font-size: 72px;
+  }
+
+  .accordion-header {
+    padding: 10px 10px 10px 25px;
+  }
+
+  .accordion__item .bullet-toggle:after {
+    margin-right: 0;
+    top: -5px;
+  }
+
+  .single-courses-accordion>.js-accordion .js-accordion-item:before {
+    counter-increment: my-counter;
+    content: counter(my-counter);
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 14px;
+    font-family: Montserrat-Bold;
+}
+
+  .single-courses-accordion .accordion .accordion__item .accordion-header .right-access .icon-wrap span {
+    font-size: 12px;
+    font-family: Montserrat-Light;
+    margin-left: 8px;
+}
+
+  .accordion-header {
+    flex-direction: column;
+  }
+
+ .bullet-toggle {
+   width: 100%;
+ }
+
+  .single-courses-accordion .accordion .accordion__item .accordion-header .right-access .icon-wrap:first-child {
+    margin-left: 0;
+  }
+
+  .single-courses-accordion .accordion h4 {
+    font-size: 16px;
+  }
+
+  .single-courses-accordion .accordion .accordion__item .accordion-header .right-access .icon-wrap span.spoiler {
+    font-size: 12px;
+    margin-left: 0;
+  }
+
+  .accordion-body__contents {
+    p {
+      font-size: 12px;
+    }
+  }
+
+  .single-courses-accordion {
+    margin-top: 70px;
+  }
+
+  .progress-label {    
+    font-size: 16px;    
+    margin-bottom: 10px;
+    margin-left: 0;
+}
+
+.single-courses-accordion .accordion-main-title {
+  margin-bottom: 0;
+  font-size: 20px;
+}
+
+  .progress-course {
+    padding: 15px;
+    flex-direction: column-reverse;
+  }
+
+  .right-access {
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 5px;
+  }
 
   .author-info__about h2 {
     font-size: 20px;

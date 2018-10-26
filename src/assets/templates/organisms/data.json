@@ -231,5 +231,8 @@
   "org-single-courses-sidebar-mobile": true,
 
   "org-courses-filter": true,
-  "org-single-courses-accordion": true
+  "org-single-courses-accordion": true,
+  "org-single-page-review": true,
+  "org-add-comment": true,
+  "org-view-courses-block": true
 }

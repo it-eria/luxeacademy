@@ -1,0 +1,36 @@
+{{#org-add-comment}}
+<section class="add-comment-container">
+        <div class="container">
+            <div class="row">
+                <div class="add-comment col-12 col-lg-8">
+                    <h4>Add a review</h4>
+                    <form action="/">
+                        <div class="d-flex align-items-center justify-content-between flex-column flex-lg-row">
+                            <input type="text" placeholder="Name" />
+                            <input type="email" placeholder="Email" />
+                        </div>
+                        <div class="d-flex align-items-center rating-choose">
+                            <p>Your rating</p>
+                            <div class="star-rating">
+                                <div class="star-rating__wrap">
+                                    <input class="star-rating__input" id="star-rating-5" type="radio" name="rating" value="5">
+                                    <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-5" title="5 out of 5 stars"></label>
+                                    <input class="star-rating__input" id="star-rating-4" type="radio" name="rating" value="4">
+                                    <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-4" title="4 out of 5 stars"></label>
+                                    <input class="star-rating__input" id="star-rating-3" type="radio" name="rating" value="3">
+                                    <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-3" title="3 out of 5 stars"></label>
+                                    <input class="star-rating__input" id="star-rating-2" type="radio" name="rating" value="2">
+                                    <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-2" title="2 out of 5 stars"></label>
+                                    <input class="star-rating__input" id="star-rating-1" type="radio" name="rating" value="1">
+                                    <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-1" title="1 out of 5 stars"></label>
+                                </div>
+                            </div>
+                        </div>                
+                        <textarea placeholder="Message" cols="20" rows="7"></textarea>
+                        <input class="review-btn" type="submit" value="Submit" />
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+{{/org-add-comment}}

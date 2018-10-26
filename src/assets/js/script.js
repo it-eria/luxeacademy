@@ -1,5 +1,5 @@
 $(function ($) {
-
+    $('#procent-progress').prepend($('.progress-main').attr('value'));
     $('.mask').css({
         "height": $('.program-item').height() - $('.h2-program-title').height() + 'px'
     });
@@ -179,7 +179,7 @@ var accordion = (function(){
     return {
       // pass configurable object literal
       init: function($settings) {
-        $accordion_header.on('click', function() {
+        $accordion_header.on('click', function() { 
           accordion.toggle($(this));
         });
         
@@ -213,7 +213,7 @@ var accordion = (function(){
 $(document).ready(function(){
     accordion.init({ speed: 300, oneOpen: true });
   });
-  
+
 // Init AOS
 AOS.init();
 
