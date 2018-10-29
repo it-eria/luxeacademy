@@ -1584,9 +1584,92 @@ body {
 }
 
 
+.contact-container {
+  &__instructors {
+    &__item {
+      background-color: #fff;
+      padding: 30px 15px;
+      margin: 0 0 30px;
+      h2 {
+        font-family: 'Montserrat-Bold';
+        font-size: 20px;
+        border-bottom: 2px solid #82aede;
+        display: inline-block;
+        padding: 0 40px 7px;
+      }
 
+      p {
+        font-family: 'Montserrat-Light';
+        margin-top: 10px;
+        font-size: 16px;
+        a {
+         
+        }
 
+        strong {
 
+        }
+      }
+
+      .blue-small-btn {
+        background-color: #82aede;
+        text-align: center;
+        color: #fff;
+        font-family: Montserrat-Regular;
+        font-size: 16px;
+        width: 160px;
+        min-height: 35px;
+        text-decoration: none;
+        outline: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 30px auto 0;
+      }
+    }
+  }
+}
+
+.contact-info {
+  margin-bottom: 150px;
+  &__wrapper {
+   
+    justify-content: center;
+    &__item {        
+      padding: 15px 50px;
+      background-color: #fff;   
+      .info-title-container {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        img {
+
+        }
+
+        span {
+          font-family: 'Montserrat-Bold';
+          font-size: 20px;
+          margin-left: 20px;
+        }
+      }
+
+      p {
+        font-size: 16px;
+        font-family: 'Montserrat-Light';
+        margin: 0;
+        a {
+          color: #000;
+          outline: none;
+        }
+
+        strong {
+          font-size: 16px;
+          font-family: 'Montserrat-Bold';
+        }
+      }
+    }
+  }
+}
 
 
 
@@ -1601,6 +1684,47 @@ body {
 
 
 @media all and (max-width: 992px) {
+
+  .contact-info__wrapper__item {
+    padding: 15px 15px;
+  }
+
+  .contact-info {
+    margin-bottom: 50px;
+}
+
+  .contact-info__wrapper__item .info-title-container span {
+    font-size: 16px;
+  }
+
+  .contact-info__wrapper__item p {
+    font-size: 12px;
+    a {
+      font-size: 12px;
+    }
+
+    strong {
+      font-size: 12px;
+    }
+  }
+
+  .contact-container__instructors__item {
+    box-shadow: 0 3px 9px #ccc;
+  }
+
+  .contact-container__instructors__item p, .contact-container__instructors__item .blue-small-btn {
+    font-size: 12px;
+  }
+
+  .contact-container__instructors__item h2 {
+    font-size: 16px;
+    padding: 0 0 7px;
+  }
+
+  .contact-container__instructors__item {
+    padding: 15px;
+    margin: 20px 0;
+  }
 
   .testimonials-container__wrapper__item {
     margin: 25px 0;

@@ -236,5 +236,15 @@
   "org-add-comment": true,
   "org-view-courses-block": true,
   "org-about-content": true,
-  "org-testimonials": true
+  "org-testimonials": true,
+  "org-contact-instructors": {
+    "mol-title-h2-default": {
+      "title": "Contact"
+    }
+  },
+  "org-contact-info": {
+    "mol-title-h2-default": {
+      "title": "Contact info"
+    }
+  }
 }

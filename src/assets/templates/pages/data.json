@@ -425,5 +425,38 @@
         "bootstrap": true
       }
     }
+  },
+
+  "p-contact": {
+    "head": {
+      "title": "About page"
+    },  
+    "org-header-info-line": {
+      "mol-search-form": true
+    },
+    "org-nav-menu": true,
+    "mol-single-page-bg": {
+      "image": "assets/img/single-bg.jpg"
+    },
+    "org-contact-instructors": {
+      "mol-title-h2-default": {
+        "title": "Contact"
+      }
+    },
+    "org-contact-info": {
+      "mol-title-h2-default": {
+        "title": "Contact info"
+      }
+    },
+    "org-view-courses-block": true,
+    "org-footer": true,
+    "foot": {
+      "vendor-scripts": {
+        "jquery": true,
+        "slick-slider": true,
+        "aos": false,
+        "bootstrap": true
+      }
+    }
   }
 }
