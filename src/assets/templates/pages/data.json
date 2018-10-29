@@ -458,5 +458,37 @@
         "bootstrap": true
       }
     }
+  },
+
+  "p-instructor-single": {
+    "head": {
+      "title": "About page"
+    },  
+    "org-header-info-line": {
+      "mol-search-form": true
+    },
+    "org-nav-menu": true,
+    "mol-single-page-bg": {
+      "image": "assets/img/single-bg.jpg"
+    },
+    "org-instructor-content": {
+      "mol-title-h2-default": {
+        "title": "JOSH COLE"
+      }
+    },
+    "org-instructors-courses": {
+      "mol-title-h2-default": {
+        "title": "COURSES by JOSH COLE"
+      }
+    },
+    "org-footer": true,
+    "foot": {
+      "vendor-scripts": {
+        "jquery": true,
+        "slick-slider": true,
+        "aos": false,
+        "bootstrap": true
+      }
+    }
   }
 }

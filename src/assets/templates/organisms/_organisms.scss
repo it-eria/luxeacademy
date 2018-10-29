@@ -1671,6 +1671,155 @@ body {
   }
 }
 
+.instructor-content-container {
+  margin-bottom: 50px;
+  &__wrapper {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 10px #ccc;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+    align-items: flex-start;
+    &__img {     
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      img {
+        border-radius: 50%;
+        width: 100%;
+        max-width: 220px;
+      }
+
+      &__social {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        a {
+          margin: 5px 15px;
+          i {
+            color: #2d2d2d;
+            font-size: 26px;
+          }
+        }
+      }
+    }
+
+    &__content {
+      padding-left: 20px;
+      border-left: 2px solid #82aede;
+      h2 {
+        font-size: 20px;
+        font-family: 'Montserrat-Bold';
+      }
+
+      p {
+        font-family: 'Montserrat-Light';
+        font-size: 16px;
+        a {
+          font-family: 'Montserrat-Light';
+          font-size: 16px;
+          color: #000;
+          outline: none;
+        }
+
+        strong {
+          font-family: 'Montserrat-Bold';
+          font-size: 16px;
+        }
+      }
+
+      a {
+        font-family: 'Montserrat-Light';
+        font-size: 16px;
+        color: #000;
+        outline: none;
+      }
+    }
+  }
+}
+
+.instructors-courses-container {
+  margin-bottom: 110px;
+  &__wrapper {
+    &__item {
+      padding: 50px;
+      background-color: #fff;
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom: 40px;
+      box-shadow: 0 5px 10px #ccc;
+      .thumb {
+        a {
+          img {
+            width: 100%;
+          }
+        }
+      }
+
+      .course-info {
+        a {
+          text-decoration: none;
+          h2 {
+            color: #191f26;
+            font-size: 20px;
+            font-family: 'Montserrat-Bold';
+          }
+        }
+
+        .rate {
+          display: flex;
+          align-items: center;
+          img {
+            max-width: 130px;
+          }
+
+          span {
+            margin-left: 5px;
+          }
+        }
+        
+        .content-course {
+          p {
+            font-size: 16px;
+            font-family: 'Montserrat-Light';
+            margin-top: 20px;
+            a {
+              font-size: 16px;
+              font-family: 'Montserrat-Light';
+              color: #000;
+              outline: none;
+            }
+
+            strong {
+              font-size: 16px;
+              font-family: 'Montserrat-Bold';
+            }
+          }
+
+          a {
+            text-transform: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.pl-40 {
+ padding-left: 40px;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1684,6 +1833,64 @@ body {
 
 
 @media all and (max-width: 992px) {
+
+  .instructors-courses-container__wrapper__item .course-info a h2 {
+    font-size: 16px;
+    margin: 0;
+  }
+
+  .instructors-courses-container__wrapper__item .course-info .content-course p {
+    font-size: 12px;
+  }
+
+  .instructors-courses-container__wrapper__item .course-info .content-course a {
+    margin: 0 auto;
+  }
+
+  .course-info {
+    padding: 0;
+    margin-top: 20px;
+  }
+
+  .instructors-courses-container__wrapper__item {
+    padding: 20px;
+  }
+  .instructor-content-container__wrapper__img {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .instructor-content-container__wrapper {
+    padding: 20px 0;
+  }
+
+  .instructor-content-container__wrapper__content {
+    margin-top: 25px;
+    h2 {
+      font-size: 16px;
+    }
+
+    p {
+      font-size: 12px;
+      a {
+        font-size: 12px;
+      }
+
+      strong {
+        font-size: 12px;
+      }
+    }
+
+    a {
+      font-size: 12px;
+    }
+  }
+   
+
+  .instructor-content-container__wrapper__content {
+    border-left: 0;
+    padding-left: 15px;
+  }
 
   .contact-info__wrapper__item {
     padding: 15px 15px;

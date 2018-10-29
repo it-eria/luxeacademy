@@ -246,5 +246,15 @@
     "mol-title-h2-default": {
       "title": "Contact info"
     }
+  },
+  "org-instructor-content": {
+    "mol-title-h2-default": {
+      "title": "JOSH COLE"
+    }
+  },
+  "org-instructors-courses": {
+    "mol-title-h2-default": {
+      "title": "COURSES by JOSH COLE"
+    }
   }
 }
