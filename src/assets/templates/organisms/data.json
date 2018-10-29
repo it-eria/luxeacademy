@@ -234,5 +234,7 @@
   "org-single-courses-accordion": true,
   "org-single-page-review": true,
   "org-add-comment": true,
-  "org-view-courses-block": true
+  "org-view-courses-block": true,
+  "org-about-content": true,
+  "org-testimonials": true
 }

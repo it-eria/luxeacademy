@@ -27,6 +27,7 @@
       ]
     },
     "org-blocks-under-slider": {
+      "under-class": "t-140",
       "col-item-wrapp": [
         {
           "logotype": "assets/img/ico-1.png",
@@ -361,6 +362,59 @@
     "org-single-courses-accordion": true,
     "org-single-page-review": true,
     "org-add-comment": true,
+    "org-view-courses-block": true,
+    "org-footer": true,
+    "foot": {
+      "vendor-scripts": {
+        "jquery": true,
+        "slick-slider": true,
+        "aos": false,
+        "bootstrap": true
+      }
+    }
+  },
+
+  "p-about": {
+    "head": {
+      "title": "About page"
+    },  
+    "org-header-info-line": {
+      "mol-search-form": true
+    },
+    "org-nav-menu": true,
+    "mol-single-page-bg": {
+      "image": "assets/img/single-bg.jpg"
+    },
+    "org-blocks-under-slider": {
+      "col-item-wrapp": [
+        {
+          "logotype": "assets/img/ico-1.png",
+          "title": "CUTTING EDGE TECHNIQUES",
+          "content": "Stay ahead of the curve. Luxe Academy instructors use the latest and most effective photography and editing techniques."
+        },
+        {
+          "logotype": "assets/img/ico-2.png",
+          "title": "ON-DEMAND CONTENT",
+          "content": "Learn at your own pace with interactive videos and content, accessible from any device, anytime, anywhere."
+        },
+        {
+          "logotype": "assets/img/ico-3.png",
+          "title": "INDUSTRY PROFESSIONALS",
+          "content": "Professional education from a team of credible and seasoned photography industry professionals."
+        },
+        {
+          "logotype": "assets/img/ico-4.png",
+          "title": "LUXE COMMUNITY",
+          "content": "Professional education from a team of credible and seasoned photography industry professionals."
+        }
+      ]
+    },
+    "org-about-content": {
+      "mol-title-h2-default": {
+        "title": "About us"
+      }
+    },
+    "org-testimonials": true,
     "org-view-courses-block": true,
     "org-footer": true,
     "foot": {

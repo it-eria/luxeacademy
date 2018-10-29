@@ -277,7 +277,6 @@ body {
 }
 
 .blocks-under-slider {
-  margin-top: -140px;
   .wrapp-items-block {
       display: flex; 
       flex-wrap: wrap;
@@ -285,9 +284,6 @@ body {
     .item-wrapp {
       background-color: #fff;
       padding: 28px 20px;
-      
-      
-      
       img {
        
       }
@@ -1503,12 +1499,130 @@ body {
   }
 }
 
+.t-140 {
+  margin-top: -140px;
+}
+
+.about-content-container {
+  &__wrapper {
+    padding: 45px 0;
+    &:nth-child(odd) {
+      display: flex;
+      flex-direction: row-reverse;      
+    }
+    &__item {
+      
+      h3 {
+        font-family: 'Montserrat-Bold';
+        font-size: 20px;
+      }
+
+      p {
+        font-family: 'Montserrat-Light';
+        font-size: 16px;
+      }
+
+      a {
+        font-family: 'Montserrat-Light';
+        font-size: 16px;
+        color: #000;
+      }
+
+      strong {
+        font-family: 'Montserrat-Bold';
+        font-size: 16px;
+      }
+
+      img {
+        width: 100%;      
+      }
+    }
+  }
+}
+
+
+.testimonials-container {
+  padding-bottom: 70px;
+  &__wrapper {
+    &__item {
+      margin: 25px 0;
+      padding: 25px 0;
+      background-color: #fff;
+      img {
+        border-radius: 50%;
+      }
+
+      .user-name {
+        font-family: 'Montserrat-Bold';
+        font-size: 20px;
+        margin: 30px 0 10px;
+      }
+
+      .position-user {
+        font-size: 14px;
+        font-family: 'Montserrat-Light';
+      }
+
+      p {
+        font-size: 16px;
+        font-family: 'Montserrat-Light';
+        margin-top: 30px;
+        margin-bottom: 0;
+        a {
+          font-size: 16px;
+          font-family: 'Montserrat-Light';
+          color: #000;
+        }
+  
+        strong {
+          font-size: 16px;
+          font-family: 'Montserrat-Bold';         
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 
 
 @media all and (max-width: 992px) {
+
+  .testimonials-container__wrapper__item {
+    margin: 25px 0;
+    padding: 25px 0;    
+    background-color: #fff;
+  }
+
+
+  .about-content-container__wrapper {
+    padding: 10px 0;
+  } 
+
+  .about-content-container__wrapper__item {
+     h3 {
+    font-size: 16px;    
+    }
+
+    p {
+      font-size: 12px;
+    }
+  }
+  
   .add-comment-container .add-comment form input {
     width: 100%;
     margin-bottom: 10px;
@@ -2066,6 +2180,34 @@ body {
 @media screen and (max-width: 768px) {
   .select-container>select, .courses-filter-container .filter-toolbar .form-style form input {
     max-width: none;
+  }
+
+  .testimonials-container {
+    padding-bottom: 30px;
+  }
+
+  .testimonials-container__wrapper__item {  
+    box-shadow: 0 4px 20px #ccc;  
+  }
+
+  .testimonials-container__wrapper__item img {
+    max-width: 130px;
+  }
+
+  .testimonials-container__wrapper__item .user-name {
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
+
+  .testimonials-container__wrapper__item .position-user {
+    font-size: 10px;
+  }
+
+  .testimonials-container__wrapper__item p {
+    font-size: 12px;
+    margin-top: 15px;
+    padding: 0 15px;
   }
 
   .form-style {
