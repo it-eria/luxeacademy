@@ -256,5 +256,11 @@
     "mol-title-h2-default": {
       "title": "COURSES by JOSH COLE"
     }
+  },
+
+  "org-instructors-container": {
+    "mol-title-h2-default": {
+      "title": "ALL INSTRUCTORS"
+    }
   }
 }
