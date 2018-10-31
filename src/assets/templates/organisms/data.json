@@ -263,5 +263,6 @@
       "title": "ALL INSTRUCTORS"
     }
   },
-  "org-blog-tabs": true
+  "org-blog-tabs": true,
+  "org-add-reply": true
 }

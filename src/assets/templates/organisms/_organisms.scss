@@ -1984,8 +1984,100 @@ body {
   }
 }
 
+.reply-btn {
+  min-width: 140px;
+  max-width: 200px;
+  margin-top: 20px;
+  float: right;
+  background-color: #82aede;
+  color: #fff;
+  font-size: 20px;
+  font-family: 'Montserrat-Regular';
+  line-height: 33px;
+  padding: 0 !important;
+  cursor: pointer;
+}
 
 
+.block-single-content {
+  padding: 80px 0;
+  &__author-post {
+
+    img {
+      width: 100%;
+      max-width: 170px;
+      object-fit: contain;
+      border-radius: 50%;
+    }
+
+    h2 {
+      font-family: 'Montserrat-Bold';
+      font-size: 30px;
+      color: #82aede;
+      margin-top: 20px;
+      margin-bottom: 0;
+    }
+
+    span {
+      font-size: 20px;
+      font-family: 'Montserrat-Light';
+    }
+  }
+
+  &__description-info {
+    ul {
+      li {
+        font-family: 'Montserrat-Light';
+        font-size: 16px;
+        a {
+          text-decoration: none;
+          color: #000;
+          font-family: 'Montserrat-Light';
+          font-size: 16px;
+        }
+      }
+    }
+    p {
+      font-size: 16px;
+      font-family: 'Montserrat-Light';
+      strong {
+        font-family: 'Montserrat-Bold';
+      }
+
+      a {
+        text-decoration: none;
+        color: #000;
+      }
+
+      img {
+        margin: 20px 0;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: #000;
+    }
+
+    img {
+      margin: 20px 0;
+    }
+
+    strong {
+      font-family: 'Montserrat-Bold';
+    }
+
+    h2 {
+      font-size: 66px;
+      font-family: Montserrat-Medium;        
+    }
+
+    h5 {
+      font-size: 20px;
+      font-family: 'Montserrat-Medium';
+    }
+  }
+}
 
 
 
@@ -2008,6 +2100,39 @@ body {
 
 
 @media all and (max-width: 992px) {
+
+  .block-single-content {
+    padding: 40px 0;
+  }
+
+  .block-single-content__author-post img {
+    max-width: 120px;
+  }
+
+  .block-single-content__author-post h2 {
+    font-size: 21px;
+    margin-top: 10px;
+  }
+
+  .block-single-content__author-post span {
+    font-size: 14px;
+  }
+
+  .block-single-content__description-info p, ul li, ul li a, span, strong {
+    font-size: 12px;
+  }
+
+  .block-single-content__description-info ul li {
+    font-size: 12px;
+  }
+
+  .block-single-content__description-info h5 {
+    font-size: 16px;
+  }
+
+  .block-single-content__description-info h2 {
+    font-size: 20px;
+  }
 
   .recent-posts-container__wrapper__item div a img {
     width: 100%;
@@ -2466,7 +2591,7 @@ body {
     padding: 0;
 }
   .title-h2-default {
-    font-size: 20px;
+    font-size: 20px !important;
     font-family: Montserrat-Medium;
     text-align: center;
     text-transform: uppercase;

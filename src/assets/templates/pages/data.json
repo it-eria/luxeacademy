@@ -523,7 +523,7 @@
 
   "p-blog": {
     "head": {
-      "title": "About page"
+      "title": "Blog page"
     },  
     "org-header-info-line": {
       "mol-search-form": true
@@ -583,6 +583,79 @@
         "title": "BLOG POSTS"
       },
       "pagintaion": true,
+      "recent-post": [
+        {
+          "img": "assets/img/post-img-1.jpg",
+          "link": "#",
+          "title": "How to Apply Presets in Mobile",
+          "author": "by Maria Frisch"
+        },
+        {
+          "img": "assets/img/post-img-2.jpg",
+          "link": "#",
+          "title": "How to Apply Presets in Mobile",
+          "author": "by Maria Frisch"
+        },
+        {
+          "img": "assets/img/post-img-3.jpg",
+          "link": "#",
+          "title": "How to Apply Presets in Mobile",
+          "author": "by Maria Frisch"
+        },
+        {
+          "img": "assets/img/post-img-4.jpg",
+          "link": "#",
+          "title": "How to Apply Presets in Mobile",
+          "author": "by Maria Frisch"
+        },
+        {
+          "img": "assets/img/post-img-5.jpg",
+          "link": "#",
+          "title": "How to Apply Presets in Mobile",
+          "author": "by Maria Frisch"
+        },
+        {
+          "img": "assets/img/post-img-6.jpg",
+          "link": "#",
+          "title": "How to Apply Presets in Mobile",
+          "author": "by Maria Frisch"
+        }
+      ]
+    },
+    "org-footer": true,
+    "foot": {
+      "vendor-scripts": {
+        "jquery": true,
+        "slick-slider": true,
+        "aos": false,
+        "bootstrap": true
+      }
+    }
+  },
+
+  "p-blog-single": {
+    "head": {
+      "title": "Blog page"
+    },  
+    "org-header-info-line": {
+      "mol-search-form": true
+    },
+    "org-nav-menu": true,
+    "mol-single-page-bg": {
+      "image": "assets/img/single-bg.jpg"
+    },
+    "org-block-single-content": {
+      "mol-title-h2-default": {
+        "title": "What Makes a Camera the Best?"
+      }
+    },
+    "org-add-reply": true,
+    "org-recent-posts": {
+      "mol-title-h2-default": {
+        "title": "RELATED POSTS"
+      },
+      "recent-slider-mob": "recent-slider-mob",
+      "pagintaion": false,
       "recent-post": [
         {
           "img": "assets/img/post-img-1.jpg",
