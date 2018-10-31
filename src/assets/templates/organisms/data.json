@@ -264,5 +264,10 @@
     }
   },
   "org-blog-tabs": true,
-  "org-add-reply": true
+  "org-add-reply": true,
+  "org-forum-tabs": {
+    "mol-title-h2-default": {
+      "title": "FORUM"
+    }
+  }
 }

@@ -704,5 +704,32 @@
         "bootstrap": true
       }
     }
+  },
+
+  "p-forum": {
+    "head": {
+      "title": "Blog page"
+    },  
+    "org-header-info-line": {
+      "mol-search-form": true
+    },
+    "org-nav-menu": true,
+    "mol-single-page-bg": {
+      "image": "assets/img/single-bg.jpg"
+    },
+    "org-forum-tabs": {
+      "mol-title-h2-default": {
+        "title": "FORUM"
+      }
+    },
+    "org-footer": true,
+    "foot": {
+      "vendor-scripts": {
+        "jquery": true,
+        "slick-slider": true,
+        "aos": false,
+        "bootstrap": true
+      }
+    }
   }
 }

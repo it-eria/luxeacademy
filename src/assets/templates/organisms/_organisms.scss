@@ -2084,9 +2084,128 @@ body {
 
 
 
+.forum-tabs-container {
+  .naccs {
+    .grid {
+      display: flex;
+      align-items: flex-start;
+      .gc {
+        .menu {
+          background-color: #fff;
+          box-shadow: 0 3px 7px #ccc;
+          div {
+            &.active {
+              p {
+                font-family: 'Montserrat-Medium';
+              }
+            }
+            img {
+              margin-right: 15px;
+              width: 100%;
+              max-width: 100px;
+              object-fit: contain;
+            }
+
+            p {
+              margin: 0;
+              font-size: 20px;
+              font-family: 'Montserrat-Light';
+            }
+          }
+        }
+      }
+
+      .gc {
+        .nacc {
+          li {
+            width: 100%;
+            div {
+              .current-tab-info {
+                display: flex;
+                align-items: center;
+                padding: 0 0 20px 20px;
+                border-bottom: 1px solid #d4d3d5;
+                img {
+                  width: 100%;
+                  max-width: 200px;
+                  object-fit: contain;
+                  margin-right: 25px;
+                }
+
+                h2 {
+                  font-size: 30px;
+                  font-family: 'Montserrat-Medium';
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.grid {
+  list-style: none;
+}
+
+
+.naccs .menu div {
+  padding: 20px 15px;
+  border-bottom: 1px solid #eaecf6;
+  cursor: pointer;
+  position: relative;
+  -webkit-transition: 1s all cubic-bezier(.075,.82,.165,1);
+  transition: 1s all cubic-bezier(.075,.82,.165,1);
+}
+
+.naccs .menu div:hover {
+  background-color: #f6f9fc;
+}
 
 
 
+.naccs .menu div.active {
+ 
+  background-color: #f6f9fc;
+  
+}
+
+.naccs .menu div.active p {
+  color: #82aede;
+  font-family: 'Montserrat-Bold';
+}
+
+ul.nacc {
+  position: relative;
+  height: 0px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+ul.nacc li {
+  opacity: 0;
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
+  position: absolute;
+  list-style: none;
+  transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+ul.nacc li.active {
+  transition-delay: .3s;
+  z-index: 2;
+  opacity: 1;
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+}
+
+ul.nacc li p {
+  margin: 0;
+}
 
 
 
