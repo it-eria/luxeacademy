@@ -192,6 +192,8 @@
       "mol-title-h2-default": {
         "title": "RECENT POSTS"
       },
+      "recent-slider-mob": "recent-slider-mob",
+      "more-posts-btn": true,
       "recent-post": [
         {
           "img": "assets/img/post-img-1.jpg",
@@ -508,6 +510,118 @@
       }
     },
     "org-view-courses-block": true,
+    "org-footer": true,
+    "foot": {
+      "vendor-scripts": {
+        "jquery": true,
+        "slick-slider": true,
+        "aos": false,
+        "bootstrap": true
+      }
+    }
+  },
+
+  "p-blog": {
+    "head": {
+      "title": "About page"
+    },  
+    "org-header-info-line": {
+      "mol-search-form": true
+    },
+    "org-nav-menu": true,
+    "mol-single-page-bg": {
+      "image": "assets/img/single-bg.jpg"
+    },
+    "org-blog-tabs": {
+      "business": {
+        "mol-title-h2-default": {
+          "title": "Business & Marketing"
+        },
+        "recent-post": [
+          {
+            "img": "assets/img/post-img-1.jpg",
+            "link": "#",
+            "title": "How to Apply Presets in Mobile",
+            "author": "by Maria Frisch"
+          },
+          {
+            "img": "assets/img/post-img-2.jpg",
+            "link": "#",
+            "title": "How to Apply Presets in Mobile",
+            "author": "by Maria Frisch"
+          },
+          {
+            "img": "assets/img/post-img-3.jpg",
+            "link": "#",
+            "title": "How to Apply Presets in Mobile",
+            "author": "by Maria Frisch"
+          },
+          {
+            "img": "assets/img/post-img-4.jpg",
+            "link": "#",
+            "title": "How to Apply Presets in Mobile",
+            "author": "by Maria Frisch"
+          },
+          {
+            "img": "assets/img/post-img-5.jpg",
+            "link": "#",
+            "title": "How to Apply Presets in Mobile",
+            "author": "by Maria Frisch"
+          },
+          {
+            "img": "assets/img/post-img-6.jpg",
+            "link": "#",
+            "title": "How to Apply Presets in Mobile",
+            "author": "by Maria Frisch"
+          }
+        ]
+      },
+      "pagintaion": true
+    },
+    "org-recent-posts": {
+      "mol-title-h2-default": {
+        "title": "BLOG POSTS"
+      },
+      "pagintaion": true,
+      "recent-post": [
+        {
+          "img": "assets/img/post-img-1.jpg",
+          "link": "#",
+          "title": "How to Apply Presets in Mobile",
+          "author": "by Maria Frisch"
+        },
+        {
+          "img": "assets/img/post-img-2.jpg",
+          "link": "#",
+          "title": "How to Apply Presets in Mobile",
+          "author": "by Maria Frisch"
+        },
+        {
+          "img": "assets/img/post-img-3.jpg",
+          "link": "#",
+          "title": "How to Apply Presets in Mobile",
+          "author": "by Maria Frisch"
+        },
+        {
+          "img": "assets/img/post-img-4.jpg",
+          "link": "#",
+          "title": "How to Apply Presets in Mobile",
+          "author": "by Maria Frisch"
+        },
+        {
+          "img": "assets/img/post-img-5.jpg",
+          "link": "#",
+          "title": "How to Apply Presets in Mobile",
+          "author": "by Maria Frisch"
+        },
+        {
+          "img": "assets/img/post-img-6.jpg",
+          "link": "#",
+          "title": "How to Apply Presets in Mobile",
+          "author": "by Maria Frisch"
+        }
+      ]
+    },
     "org-footer": true,
     "foot": {
       "vendor-scripts": {

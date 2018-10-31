@@ -262,5 +262,6 @@
     "mol-title-h2-default": {
       "title": "ALL INSTRUCTORS"
     }
-  }
+  },
+  "org-blog-tabs": true
 }

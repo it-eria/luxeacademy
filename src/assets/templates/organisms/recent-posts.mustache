@@ -1,10 +1,10 @@
 {{#org-recent-posts}}
-    <section class="recent-posts-container">
+    <section class="recent-posts-container"> 
         <div class="container">
             {{> ../molecules/title-h2-default}}
-            <div class="recent-posts-container__wrapper">
+            <div class="recent-posts-container__wrapper {{recent-slider-mob}}">
                 {{#recent-post}}
-                <div class="recent-posts-container__wrapper__item col-lg-4">
+                <div class="recent-posts-container__wrapper__item col-md-6 col-lg-4">
                     <div>
                         <a href="{{{link}}}"><img src="{{{img}}}" alt="img"></a>
                         <div class="post-info">
@@ -15,7 +15,22 @@
                 </div>
                 {{/recent-post}}
             </div>
+            {{#more-posts-btn}}
             <a href="#" class="blue-btn-style m-auto btn-margin-top">read more</a>
+            {{/more-posts-btn}}
+            {{#pagintaion}}
+                <div class="pagi-posts">
+                    <ul>
+                        <li><a href="#"><</a></li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">></a></li>
+                    </ul>
+                </div>
+            {{/pagintaion}}
         </div>
     </section>
 {{/org-recent-posts}}

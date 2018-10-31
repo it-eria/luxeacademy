@@ -1,0 +1,106 @@
+{{#org-blog-tabs}}
+<section class="blog-container clearfix"> 
+        <div class="container">
+            <div class="blog-container__filter-tabs">
+                <ul class="nav d-lg-flex">
+                    <li><a class="active" data-toggle="tab" href="#all">View All</a></li>
+                    <li><a data-toggle="tab" href="#businessandmarketing">Business & Marketing</a></li>
+                    <li><a data-toggle="tab" href="#equipmentandgear">Equipment & Gear</a></li>
+                    <li><a data-toggle="tab" href="#lightroom">Lightroom</a></li>
+                    <li><a data-toggle="tab" href="#photography">Photography</a></li>
+                    <li><a data-toggle="tab" href="#photoshop">Photoshop</a></li>
+                    <li><a data-toggle="tab" href="#uncategorized">Uncategorized</a></li>
+                </ul>
+            </div>
+            <div class="tab-content">
+                <div id="all" class="tab-pane fade in active show">
+                    <h2 class="title-h2-default">TRENDING POSTS</h2>
+                    <div class="all-posts-container clearfix">
+                        <div class="recent-posts-container__wrapper__item bl-post col-lg-4">
+                            <div class="h-desc-100">
+                                <a href="#"><img src="assets/img/blog-big-img.jpg" alt="img"></a>
+                                <div class="post-info">
+                                    <a href="#">A Guide to the Best Cameras for 2018</a> 
+                                    <span>by Maria Frisch </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recent-posts-container__wrapper__item bl-post col-lg-4">
+                            <div class="h-desc-100">
+                                <a href="#"><img src="assets/img/prog-img-2.jpg" alt="img"></a>
+                                <div class="post-info">
+                                    <a href="#">A Guide to the Best Cameras for 2018</a> 
+                                    <span>by Maria Frisch </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recent-posts-container__wrapper__item bl-post col-lg-4">
+                            <div class="h-desc-100">
+                                <a href="#"><img src="assets/img/prog-img-3.jpg" alt="img"></a>
+                                <div class="post-info">
+                                    <a href="#">A Guide to the Best Cameras for 2018</a> 
+                                    <span>by Maria Frisch </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {{> ../organisms/recent-posts}}
+                </div>
+               
+                <div id="businessandmarketing" class="tab-pane fade">
+                    {{#business}}
+                    <section class="recent-posts-container"> 
+                        <div class="container">
+                            {{> ../molecules/title-h2-default}}
+                            <div class="recent-posts-container__wrapper {{recent-slider-mob}}">
+                                {{#recent-post}}
+                                <div class="recent-posts-container__wrapper__item col-md-6 col-lg-4">
+                                    <div>
+                                        <a href="{{{link}}}"><img src="{{{img}}}" alt="img"></a>
+                                        <div class="post-info">
+                                            <a href="{{{link}}}">{{{title}}}</a> 
+                                            <span>{{{author}}}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                {{/recent-post}}
+                            </div>
+                            {{#more-posts-btn}}
+                            <a href="#" class="blue-btn-style m-auto btn-margin-top">read more</a>
+                            {{/more-posts-btn}}
+                            {{#pagintaion}}
+                                <div class="pagi-posts">
+                                    <ul>
+                                        <li><a href="#"><</a></li>
+                                        <li><a href="#">1</a></li>
+                                        <li><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li><a href="#">4</a></li>
+                                        <li><a href="#">5</a></li>
+                                        <li><a href="#">></a></li>
+                                    </ul>
+                                </div>
+                            {{/pagintaion}}
+                        </div>
+                    </section>
+                    {{/business}}
+                </div>
+                <div id="equipmentandgear" class="tab-pane fade">
+
+                </div>
+                <div id="lightroom" class="tab-pane fade">
+
+                </div>
+                <div id="photography" class="tab-pane fade">
+
+                </div>
+                <div id="photoshop" class="tab-pane fade">
+
+                </div>
+                <div id="uncategorized" class="tab-pane fade">
+
+                </div>
+            </div>
+        </div>
+    </section>
+{{/org-blog-tabs}}

@@ -1,4 +1,20 @@
 $(function ($) {
+    $(window).on('resize', function(){
+    if($(window).width() > 992){
+        $('.bl-post:first-child').removeClass('col-lg-4').addClass('col-8');
+        $('.bl-post:first-child').css({
+            "height": ($('.bl-post:last-child').height()) * 2 + 24 + 'px'
+        });
+    }
+});
+
+if($(window).width() > 992){
+    $('.bl-post:first-child').removeClass('col-lg-4').addClass('col-8');
+    $('.bl-post:first-child').css({
+        "height": ($('.bl-post:last-child').height()) * 2 + 24 + 'px'
+    });
+}
+
     $('#procent-progress').prepend($('.progress-main').attr('value'));
     $('.mask').css({
         "height": $('.program-item').height() - $('.h2-program-title').height() + 'px'
@@ -107,13 +123,29 @@ $('.slider-wrap').slick({
 var slickParameters = {
     dots: false,
     arrows: false,
-    autoplay: true,
+    autoplay: false,
     infinite: true,
     speed: 1000,
     slidesToShow: 1,
     centerMode: true,
     focusOnSelect: true
 };
+
+//tab 1
+function slickUnslicktab1() {
+    var windowWidth = $(window).width();
+    if (windowWidth < 992) {
+        if (!$('.all-posts-container').hasClass('slick-slider')) {
+            $('.all-posts-container').slick(slickParameters);
+        }
+    } else {
+        if ($('.all-posts-container').hasClass('slick-slider')) {
+            $('.all-posts-container').slick('unslick');
+        }
+    }
+}
+slickUnslicktab1();
+//end tab1
 
 
 function slickUnslickCategory() {
@@ -129,6 +161,22 @@ function slickUnslickCategory() {
     }
 }
 slickUnslickCategory();
+
+function slickUnslickBlogPosts() {
+    var windowWidth = $(window).width();
+    if (windowWidth < 992) {
+        if (!$('.all-posts-container').hasClass('slick-slider')) {
+            $('.all-posts-container').slick(slickParameters);
+        }
+    } else {
+        if ($('.all-posts-container').hasClass('slick-slider')) {
+            $('.all-posts-container').slick('unslick');
+        }
+    }
+}
+slickUnslickBlogPosts();
+
+
 
 if($('.courses-wrapper').hasClass('unclick-slider-event')) {
     if ($('.courses-wrapper').hasClass('slick-slider')) {
@@ -152,12 +200,12 @@ slickUnslickPrograms();
 function slickUnslickPosts() {
     var windowWidth = $(window).width();
     if (windowWidth < 992) {
-        if (!$('.recent-posts-container__wrapper').hasClass('slick-slider')) {
-            $('.recent-posts-container__wrapper').slick(slickParameters);
+        if (!$('.recent-slider-mob').hasClass('slick-slider')) {
+            $('.recent-slider-mob').slick(slickParameters);
         }
     } else {
-        if ($('.recent-posts-container__wrapper').hasClass('slick-slider')) {
-            $('.recent-posts-container__wrapper').slick('unslick');
+        if ($('.recent-slider-mob').hasClass('slick-slider')) {
+            $('.recent-slider-mob').slick('unslick');
         }
     }
 }
@@ -216,6 +264,13 @@ $(document).ready(function(){
 
 // Init AOS
 AOS.init();
+
+
+
+
+
+
+
 
 })(jQuery);
 
