@@ -2116,9 +2116,13 @@ body {
       }
 
       .gc {
+        margin-bottom: 40px;
         .nacc {
+          height: auto !important;
           li {
-            width: 100%;
+            width: 100%;            
+            height: 0;
+            overflow: hidden;
             div {
               .current-tab-info {
                 display: flex;
@@ -2137,6 +2141,142 @@ body {
                   font-family: 'Montserrat-Medium';
                 }
               }
+
+              .add-question-block {
+                display: flex;
+                align-items: flex-start;
+                padding: 20px;
+                border-bottom: 1px solid #d4d3d5;
+                h2 {
+                  font-size: 20px;
+                  font-family: 'Montserrat-Medium';
+                  color: #82aede;
+                  margin: 0 55px 0 0;
+                  white-space: nowrap;
+                }
+
+                form {
+                  display: flex;
+                  width: 100%;
+                  justify-content: flex-end;
+                  flex-wrap: wrap;
+
+                  input {
+                    height: 30px;
+                    border: 1px solid #d4d3d5;
+                    padding-left: 20px;
+                    font-size: 16px;
+                    width: 100%;
+                    outline: none;
+                  }
+
+                  .send-btn {
+                    font-size: 16px;
+                    font-family: 'Montserrat-Medium';
+                    color: #fff;
+                    text-align: center;
+                    background-color: #82aede;
+                    width: 140px;
+                    border: none;
+                    margin-top: 15px;
+                    height: 30px;
+                    padding-left: 0;
+                    display: block;
+                    cursor: pointer;
+                    
+                  } 
+                }
+              }
+
+              .comment-parent {
+                border-bottom: 1px solid #d4d3d5;
+                padding: 20px 0;
+                &__content {
+                  padding: 20px;
+                  h3 {
+                    font-size: 20px;
+                    font-family: 'Montserrat-Medium';
+                  }
+
+                  p {
+                    font-size: 16px;
+                    font-family: 'Montserrat-Light';
+                  }
+
+                  span {
+                    margin-top: 20px;
+                    display: block;
+                    text-align: right;
+                  }
+                }
+
+                .comment-child {
+                  a {
+                    font-size: 14px;
+                    color: #82aede;
+                    margin-bottom: 20px;
+                    display: block;
+                    font-family: 'Montserrat-Regular';
+                  }
+
+                  &__content {
+                    margin: 30px 0;
+                    h3 {
+                      font-size: 20px;
+                      font-family: 'Montserrat-Medium';
+                    }
+
+                    p {
+                      font-size: 16px;
+                      font-family: 'Montserrat-Light';
+                    }
+
+                    span {
+                      margin-top: 20px;
+                      display: block;
+                      text-align: right;
+                    }
+                  }
+
+                  .answer-comment {
+                    h3 {
+                      font-family: 'Montserrat-Medium';
+                      font-size: 20px;
+                    }
+
+                    form {
+                      display: flex;
+                      width: 100%;
+                      justify-content: flex-end;
+                      flex-wrap: wrap;
+                      
+                      input {
+                        height: 30px;
+                        border: 1px solid #ccc;
+                        padding-left: 20px;
+                        font-size: 16px;
+                        width: 100%;
+                        outline: none;
+                      }
+
+                      .send-btn {
+                        font-size: 16px;
+                        font-family: 'Montserrat-Medium';
+                        color: #fff;
+                        text-align: center;
+                        background-color: #82aede;
+                        width: 140px;
+                        border: none;
+                        margin-top: 15px;
+                        height: 30px;
+                        cursor: pointer;
+                        padding-left: 0;
+                        display: block;
+                      }
+                    }
+                  }
+                }
+              }
             }
           }
         }
@@ -2145,10 +2285,25 @@ body {
   }
 }
 
+#loadMore {
+  font-size: 20px;
+  font-family: 'Montserrat-Medium';
+  text-align: center;
+  display: block;
+  box-shadow: 0 3px 10px #ccc;
+  color: #82aede;
+  padding: 20px;
+  z-index: 99;
+  cursor: pointer;
+}
+
 
 .grid {
   list-style: none;
 }
+
+
+
 
 
 .naccs .menu div {
@@ -2178,8 +2333,7 @@ body {
 }
 
 ul.nacc {
-  position: relative;
-  height: 0px;
+  position: relative;  
   list-style: none;
   margin: 0;
   padding: 0;
@@ -2190,7 +2344,7 @@ ul.nacc li {
   opacity: 0;
   -webkit-transform: translateX(50px);
           transform: translateX(50px);
-  position: absolute;
+  position: relative;
   list-style: none;
   transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
 }
@@ -2199,6 +2353,8 @@ ul.nacc li.active {
   transition-delay: .3s;
   z-index: 2;
   opacity: 1;
+  height: auto !important;
+  overflow: visible !important;
   -webkit-transform: translateX(0px);
           transform: translateX(0px);
 }
@@ -2206,6 +2362,28 @@ ul.nacc li.active {
 ul.nacc li p {
   margin: 0;
 }
+
+
+
+.nacc li > div > .comment-parent {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2219,6 +2397,96 @@ ul.nacc li p {
 
 
 @media all and (max-width: 992px) {
+  .forum-tabs-container .naccs .grid .gc .nacc li div .current-tab-info {
+    flex-direction: column;
+  }
+
+  #loadMore {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .gc {
+    padding: 0;
+  }
+
+  .forum-tabs-container .naccs .grid .gc .nacc li div .comment-parent .comment-child__content {
+    margin: 20px 0;
+  }
+
+  .forum-tabs-container .naccs .grid .gc .nacc li div .comment-parent .comment-child__content h3, .forum-tabs-container .naccs .grid .gc .nacc li div .comment-parent .comment-child .answer-comment h3 {
+    font-size: 16px;
+  }
+
+  .forum-tabs-container .naccs .grid .gc .nacc li div .comment-parent .comment-child .answer-comment form input {
+    font-size: 12px;
+  }
+
+  .forum-tabs-container .naccs .grid .gc .nacc li div .comment-parent .comment-child .answer-comment form .send-btn {
+    font-size: 12px;
+  }
+
+  .forum-tabs-container .naccs .grid .gc .nacc li div .comment-parent__content p, .forum-tabs-container .naccs .grid .gc .nacc li div .comment-parent .comment-child__content p {
+    font-size: 12px;
+  }
+
+  .forum-tabs-container .naccs .grid .gc .nacc li div .comment-parent__content h3 {
+    font-size: 16px;
+  }
+
+  .forum-tabs-container .naccs .grid .gc .nacc li div .comment-parent__content {
+    padding: 0;
+  }
+
+  .forum-tabs-container .naccs .grid .gc .nacc li div .add-question-block form input, .forum-tabs-container .naccs .grid .gc .nacc li div .add-question-block form .send-btn {
+    font-size: 12px;
+  }
+
+  .forum-tabs-container .naccs .grid .gc .nacc li div .add-question-block form {
+    margin-top: 10px;
+  }
+  .forum-tabs-container .naccs .grid .gc .nacc li div .add-question-block h2 {
+    font-size: 16px;
+  }
+
+  .forum-tabs-container .naccs .grid .gc .nacc li div .add-question-block {
+    padding: 20px 0;
+    flex-direction: column;
+  }
+
+  .forum-tabs-container .naccs .grid .gc .nacc li div .current-tab-info h2 {
+    font-size: 20px;
+    font-family: Montserrat-Medium;
+    margin-top: 20px;
+    padding-bottom: 15px;
+}
+
+  .forum-tabs-container .naccs .grid .gc .nacc li div .current-tab-info img {
+    max-width: none;   
+    margin-right: 0;
+  }
+
+  .forum-tabs-container .naccs .grid .gc .nacc li div .current-tab-info {
+    padding: 0;
+  }
+
+  .forum-tabs-container .naccs .grid .gc .menu div p {
+    font-size: 16px;
+    font-family: 'Montserrat-Light';
+  }
+
+  .forum-tabs-container .naccs .grid .gc .menu div.active p {
+    font-family: 'Montserrat-Light';
+    color: #82aede;
+  }
+
+  .naccs .menu div {
+    padding: 7px;
+  }
+
+  .grid {
+    flex-wrap: wrap;
+  }
 
   .block-single-content {
     padding: 40px 0;
