@@ -1,4 +1,23 @@
 $(function ($) {
+    var modal = document.getElementById('myModal');
+
+    var img = document.querySelectorAll('.imgZoom');
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    
+    Array.from(img, function(item) {
+        item.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+    }) 
+    
+    var span = document.getElementsByClassName("close")[0];
+    
+    span.onclick = function() { 
+        modal.style.display = "none";
+    }
 
     var size_li = $(".nacc li.active > div > .comment-parent").length;
     var x=3;
@@ -11,12 +30,8 @@ $(function ($) {
         }    
     });
 
-// Acc
 $(document).on("click", ".naccs .menu div", function() {
-    
-
 	var numberIndex = $(this).index();
-
 	if (!$(this).is("active")) {
 		$(".naccs .menu div").removeClass("active");
 		$(".naccs ul li").removeClass("active");
@@ -40,10 +55,14 @@ $(document).on("click", ".naccs .menu div", function() {
             //  $('#loadMore').hide();
         }    
     });
+
 });
 
-
-
+if($(window).width() < 992) {
+    $(document).on("click", ".naccs .menu div", function() {
+        $('html, body').animate({ scrollTop: $($(this).attr('data-scroll')).offset().top}, 500, 'linear');
+    });
+}
     $(window).on('resize', function(){
     if($(window).width() > 992){
         $('.bl-post:first-child').removeClass('col-lg-4').addClass('col-8');
@@ -192,7 +211,6 @@ function slickUnslicktab1() {
 slickUnslicktab1();
 //end tab1
 
-
 function slickUnslickCategory() {
     var windowWidth = $(window).width();
     if (windowWidth < 992) {
@@ -220,8 +238,6 @@ function slickUnslickBlogPosts() {
     }
 }
 slickUnslickBlogPosts();
-
-
 
 if($('.courses-wrapper').hasClass('unclick-slider-event')) {
     if ($('.courses-wrapper').hasClass('slick-slider')) {
@@ -258,32 +274,23 @@ slickUnslickPosts();
 var accordion = (function(){  
     var $accordion = $('.js-accordion');
     var $accordion_header = $accordion.find('.js-accordion-header');
-    var $accordion_item = $('.js-accordion-item');
-   
-    // default settings 
-    var settings = {
-      // animation speed
+    var $accordion_item = $('.js-accordion-item');   
+    var settings = {   
       speed: 400,
-      
-      // close all other accordion items if true
       oneOpen: false
     };
       
-    return {
-      // pass configurable object literal
+    return {      
       init: function($settings) {
         $accordion_header.on('click', function() { 
           accordion.toggle($(this));
         });
         
         $.extend(settings, $settings); 
-        
-        // ensure only one accordion is active if oneOpen is true
         if(settings.oneOpen && $('.js-accordion-item.active').length > 1) {
           $('.js-accordion-item.active:not(:first)').removeClass('active');
         }
         
-        // reveal the active accordion bodies
         $('.js-accordion-item.active').find('> .js-accordion-body').show();
       },
       toggle: function($this) {
@@ -294,9 +301,8 @@ var accordion = (function(){
                  .removeClass('active')
                  .find('.js-accordion-body')
                  .slideUp()
-        }
-        
-        // show/hide the clicked accordion item
+        }       
+       
         $this.closest('.js-accordion-item').toggleClass('active');
         $this.next().stop().slideToggle(settings.speed);
       }

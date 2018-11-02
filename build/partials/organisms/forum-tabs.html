@@ -5,35 +5,41 @@
             <div class="grid">
                 <div class="gc col-12 col-lg-4">
                     <div class="menu">
-                        <div class="active d-flex align-items-center">
+                        <div data-scroll="#scroll" class="active d-flex align-items-center">
                             <img src="assets/img/sidebar-img1.jpg" alt="img">
                             <p>Adobe Photoshop Secrets</p>
                         </div>
-                        <div class="d-flex align-items-center">
+                        <div data-scroll="#scroll" class="d-flex align-items-center">
                             <img src="assets/img/sidebar-img2.jpg" alt="img">
                             <p>Fundamentals of Photography – Basics</p>
                         </div>
-                        <div class="d-flex align-items-center">
+                        <div data-scroll="#scroll" class="d-flex align-items-center">
                             <img src="assets/img/sidebar-img3.jpg" alt="img">
                             <p>Adobe Photoshop – Intermediate</p>
                         </div>
-                        <div class="d-flex align-items-center">
+                        <div data-scroll="#scroll" class="d-flex align-items-center">
                             <img src="assets/img/sidebar-img4.jpg" alt="img">
                             <p>Adobe Lightroom Classic CC 101 – Basics</p>
                         </div>
-                        <div class="d-flex align-items-center">
+                        <div data-scroll="#scroll" class="d-flex align-items-center">
                             <img src="assets/img/sidebar-img5.jpg" alt="img">
                             <p>Adobe Lightroom Secrets</p>
                         </div>
                     </div>
                 </div>
                 <div class="gc col-12 col-lg-8">
-                    <ul class="nacc">
+                    <ul class="nacc" id="scroll">
                         <li class="active">
                             <div>
                                 <div class="current-tab-info">
-                                    <img src="assets/img/tab-content-img.jpg" alt="img">
                                     <h2>Adobe Photoshop – Intermediate</h2>
+                                    <div class="d-lg-flex">
+                                        <img class="imgZoom" src="assets/img/tab-content-img.jpg" alt="img">
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum soluta ipsum eligendi ab omnis. Fugiat saepe repudiandae consectetur, nostrum, quos hic magni aliquid blanditiis, error non adipisci minus natus
+                                            voluptas!</p>
+                                    </div>
+
+
                                 </div>
                                 <div class="add-question-block">
                                     <h2>Andriy Severa</h2>
@@ -223,8 +229,14 @@
                         <li>
                             <div>
                                 <div class="current-tab-info">
-                                    <img src="assets/img/tab-content-img.jpg" alt="img">
                                     <h2>Adobe Photoshop – Intermediate</h2>
+                                    <div class="d-lg-flex">
+                                        <img class="imgZoom" src="assets/img/tab-content-img.jpg" alt="img">
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum soluta ipsum eligendi ab omnis. Fugiat saepe repudiandae consectetur, nostrum, quos hic magni aliquid blanditiis, error non adipisci minus natus
+                                            voluptas!</p>
+                                    </div>
+
+
                                 </div>
                                 <div class="add-question-block">
                                     <h2>Andriy Severa</h2>
@@ -414,8 +426,14 @@
                         <li>
                             <div>
                                 <div class="current-tab-info">
-                                    <img src="assets/img/tab-content-img.jpg" alt="img">
                                     <h2>Adobe Photoshop – Intermediate</h2>
+                                    <div class="d-lg-flex">
+                                        <img class="imgZoom" src="assets/img/tab-content-img.jpg" alt="img">
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum soluta ipsum eligendi ab omnis. Fugiat saepe repudiandae consectetur, nostrum, quos hic magni aliquid blanditiis, error non adipisci minus natus
+                                            voluptas!</p>
+                                    </div>
+
+
                                 </div>
                                 <div class="add-question-block">
                                     <h2>Andriy Severa</h2>
@@ -605,8 +623,14 @@
                         <li>
                             <div>
                                 <div class="current-tab-info">
-                                    <img src="assets/img/tab-content-img.jpg" alt="img">
                                     <h2>Adobe Photoshop – Intermediate</h2>
+                                    <div class="d-lg-flex">
+                                        <img class="imgZoom" src="assets/img/tab-content-img.jpg" alt="img">
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum soluta ipsum eligendi ab omnis. Fugiat saepe repudiandae consectetur, nostrum, quos hic magni aliquid blanditiis, error non adipisci minus natus
+                                            voluptas!</p>
+                                    </div>
+
+
                                 </div>
                                 <div class="add-question-block">
                                     <h2>Andriy Severa</h2>
@@ -796,8 +820,14 @@
                         <li>
                             <div>
                                 <div class="current-tab-info">
-                                    <img src="assets/img/tab-content-img.jpg" alt="img">
                                     <h2>Adobe Photoshop – Intermediate</h2>
+                                    <div class="d-lg-flex">
+                                        <img class="imgZoom" src="assets/img/tab-content-img.jpg" alt="img">
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum soluta ipsum eligendi ab omnis. Fugiat saepe repudiandae consectetur, nostrum, quos hic magni aliquid blanditiis, error non adipisci minus natus
+                                            voluptas!</p>
+                                    </div>
+
+
                                 </div>
                                 <div class="add-question-block">
                                     <h2>Andriy Severa</h2>
@@ -984,6 +1014,7 @@
                                 </div>
                             </div>
                         </li>
+
                     </ul>
                     <div id="loadMore">5 more answers <br>&#11167;</div>
                 </div>
@@ -991,3 +1022,9 @@
         </div>
     </div>
 </section>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+</div>
