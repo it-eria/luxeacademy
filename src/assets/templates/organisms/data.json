@@ -269,5 +269,11 @@
     "mol-title-h2-default": {
       "title": "FORUM"
     }
+  },
+
+  "org-create-account-container": {
+    "mol-title-h2-default": {
+      "title": "Create account"
+    }
   }
 }

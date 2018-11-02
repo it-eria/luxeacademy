@@ -1,23 +1,5 @@
-$(function ($) {
-    var modal = document.getElementById('myModal');
-
-    var img = document.querySelectorAll('.imgZoom');
-    var modalImg = document.getElementById("img01");
-    var captionText = document.getElementById("caption");
+$(function($) {
     
-    Array.from(img, function(item) {
-        item.onclick = function(){
-            modal.style.display = "block";
-            modalImg.src = this.src;
-            captionText.innerHTML = this.alt;
-        }
-    }) 
-    
-    var span = document.getElementsByClassName("close")[0];
-    
-    span.onclick = function() { 
-        modal.style.display = "none";
-    }
 
     var size_li = $(".nacc li.active > div > .comment-parent").length;
     var x=3;
@@ -316,7 +298,25 @@ $(document).ready(function(){
 // Init AOS
 AOS.init();
 
+var modal = document.getElementById('myModal');
 
+    var img = document.querySelectorAll('.imgZoom');
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    
+    Array.from(img, function(item) {
+        item.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+    });
+    
+    var span = document.getElementsByClassName("close")[0];
+    
+    span.onclick = function() { 
+        modal.style.display = "none";
+    }
 
 
 
