@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png">
     <link rel="stylesheet" href="assets/css/vendors/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/vendors/aos.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -12,7 +13,6 @@
     <link rel="stylesheet" href="assets/css/vendors/slick-theme.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="assets/css/style.min.css">
-
     <title>About page</title>
 </head>
 
@@ -71,7 +71,7 @@
     <section class="about-content-container">
         <div class="container">
             <h2 class="title-h2-default ">About us</h2>
-            <div class="about-content-container__wrapper row">
+            <div class="about-content-container__wrapper row " data-aos="fade-up" data-aos-offset="-1200">
                 <div class="about-content-container__wrapper__item col-12 col-lg-6">
                     <h3>Who We Are</h3>
                     <p>Luxe was started by a small group of photographers in 2016 with the mission of providing high quality, relevant, fully adjustable editing tools that speed up your editing workflow at an affordable price. Since that time, the Luxe community
@@ -85,7 +85,7 @@
                     <img src="assets/img/about-img-1.jpg" alt="img">
                 </div>
             </div>
-            <div class="about-content-container__wrapper row">
+            <div class="about-content-container__wrapper row" data-aos="fade-up" data-aos-offset="-1200">
                 <div class="about-content-container__wrapper__item col-12 col-lg-6">
                     <h3>Giving Back</h3>
                     <p>Luxe has been a true gift for us, and we are fortunate to operate such a successful business. We believe in giving some of this back to the community and to those in-need. As such, we donate 5% of our profits every month.</p>
@@ -129,7 +129,7 @@
     </section>
     <section class="testimonials-container">
         <div class="container">
-            <div class="testimonials-container__wrapper row m-0">
+            <div class="testimonials-container__wrapper row m-0" data-aos="fade-up" data-aos-offset="-1200">
                 <div class="testimonials-container__wrapper__item col-md-4 col-12 text-center">
                     <img src="assets/img/user1.jpg" alt="img">
                     <h3 class="user-name">Tracy C.</h3>
@@ -151,7 +151,7 @@
             </div>
         </div>
     </section>
-    <section class="view-courses-block" style="background-image: url(assets/img/view-courses-bg.jpg);">
+    <section data-aos="fade-up" data-aos-offset="-1200" class="view-courses-block" style="background-image: url(assets/img/view-courses-bg.jpg);">
         <div class="container d-flex flex-column align-items-center">
             <h2>TRY LUXE ACADEMY TODAY!</h2>
             <p>Sign up to receive the latest news and subscriber-only discounts on Luxe tutorials, presets, actions, and more.</p>
@@ -182,13 +182,18 @@
     </section>
     <!-- Jquery -->
     <script src="assets/js/vendors/jquery-3.3.1.js"></script>
+
     <!-- Slick slider -->
     <script src="assets/js/vendors/slick.min.js"></script>
+    <!-- Animate on scroll -->
+    <script src="assets/js/vendors/aos.js"></script>
     <!-- Bootstrap -->
     <script src="assets/js/vendors/bootstrap.js"></script>
     <!-- Custom script -->
     <script src="assets/js/script.min.js"></script>
-
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

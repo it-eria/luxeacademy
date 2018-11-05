@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png">
     <link rel="stylesheet" href="assets/css/vendors/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/vendors/aos.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -12,8 +13,7 @@
     <link rel="stylesheet" href="assets/css/vendors/slick-theme.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="assets/css/style.min.css">
-
-    <title>About page</title>
+    <title>Instructor page</title>
 </head>
 
 <body>
@@ -68,8 +68,7 @@
     <section class="bg-single">
         <img src="assets/img/single-bg.jpg" alt="img">
     </section>
-
-    <section class="instructor-content-container">
+    <section class="instructor-content-container" data-aos="fade-up" data-aos-offset="500">
         <div class="container">
             <h2 class="title-h2-default ">JOSH COLE</h2>
             <div class="instructor-content-container__wrapper row m-0">
@@ -98,7 +97,7 @@
         <div class="container">
             <h2 class="title-h2-default ">COURSES by JOSH COLE</h2>
             <div class="instructors-courses-container__wrapper">
-                <div class="instructors-courses-container__wrapper__item row ">
+                <div class="instructors-courses-container__wrapper__item row " data-aos="fade-up" data-aos-offset="500">
                     <div class="thumb col-12 col-lg-3 p-0">
                         <a href="#"><img src="assets/img/john-course-1.jpg" alt="img"></a>
                     </div>
@@ -117,7 +116,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="instructors-courses-container__wrapper__item row ">
+                <div class="instructors-courses-container__wrapper__item row " data-aos="fade-up" data-aos-offset="500">
                     <div class="thumb col-12 col-lg-3 p-0">
                         <a href="#"><img src="assets/img/john-course-2.jpg" alt="img"></a>
                     </div>
@@ -163,13 +162,18 @@
     </section>
     <!-- Jquery -->
     <script src="assets/js/vendors/jquery-3.3.1.js"></script>
+
     <!-- Slick slider -->
     <script src="assets/js/vendors/slick.min.js"></script>
+    <!-- Animate on scroll -->
+    <script src="assets/js/vendors/aos.js"></script>
     <!-- Bootstrap -->
     <script src="assets/js/vendors/bootstrap.js"></script>
     <!-- Custom script -->
     <script src="assets/js/script.min.js"></script>
-
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

@@ -1,7 +1,7 @@
 {
   "p-index": {
     "head": {
-      "title": "Home page"
+      "title": "LuxeAcademy"
     },
     "org-header-info-line": {
       "mol-search-form": true
@@ -238,7 +238,7 @@
       "vendor-scripts": {
         "jquery": true,
         "slick-slider": true,
-        "aos": false,
+        "aos": true,
         "bootstrap": true
       }
     }
@@ -246,7 +246,7 @@
 
   "p-courses": {
     "head": {
-      "title": "Home page"
+      "title": "Courses page"
     },    
     "org-header-info-line": {
       "mol-search-form": true
@@ -338,7 +338,7 @@
       "vendor-scripts": {
         "jquery": true,
         "slick-slider": true,
-        "aos": false,
+        "aos": true,
         "bootstrap": true
       }
     }
@@ -346,7 +346,7 @@
 
   "p-course-single": {
     "head": {
-      "title": "Home page"
+      "title": "Course single"
     },  
     "org-header-info-line": {
       "mol-search-form": true
@@ -370,7 +370,7 @@
       "vendor-scripts": {
         "jquery": true,
         "slick-slider": true,
-        "aos": false,
+        "aos": true,
         "bootstrap": true
       }
     }
@@ -423,7 +423,7 @@
       "vendor-scripts": {
         "jquery": true,
         "slick-slider": true,
-        "aos": false,
+        "aos": true,
         "bootstrap": true
       }
     }
@@ -431,7 +431,7 @@
 
   "p-contact": {
     "head": {
-      "title": "About page"
+      "title": "Contact page"
     },  
     "org-header-info-line": {
       "mol-search-form": true
@@ -456,7 +456,7 @@
       "vendor-scripts": {
         "jquery": true,
         "slick-slider": true,
-        "aos": false,
+        "aos": true,
         "bootstrap": true
       }
     }
@@ -464,7 +464,7 @@
 
   "p-instructor-single": {
     "head": {
-      "title": "About page"
+      "title": "Instructor page"
     },  
     "org-header-info-line": {
       "mol-search-form": true
@@ -488,14 +488,14 @@
       "vendor-scripts": {
         "jquery": true,
         "slick-slider": true,
-        "aos": false,
+        "aos": true,
         "bootstrap": true
       }
     }
   },
   "p-instructors": {
     "head": {
-      "title": "About page"
+      "title": "Instructors page"
     },  
     "org-header-info-line": {
       "mol-search-form": true
@@ -515,7 +515,7 @@
       "vendor-scripts": {
         "jquery": true,
         "slick-slider": true,
-        "aos": false,
+        "aos": true,
         "bootstrap": true
       }
     }
@@ -627,7 +627,7 @@
       "vendor-scripts": {
         "jquery": true,
         "slick-slider": true,
-        "aos": false,
+        "aos": true,
         "bootstrap": true
       }
     }
@@ -700,7 +700,7 @@
       "vendor-scripts": {
         "jquery": true,
         "slick-slider": true,
-        "aos": false,
+        "aos": true,
         "bootstrap": true
       }
     }
@@ -708,7 +708,7 @@
 
   "p-forum": {
     "head": {
-      "title": "Blog page"
+      "title": "Forum page"
     },  
     "org-header-info-line": {
       "mol-search-form": true
@@ -727,7 +727,7 @@
       "vendor-scripts": {
         "jquery": true,
         "slick-slider": true,
-        "aos": false,
+        "aos": true,
         "bootstrap": true
       }
     }
