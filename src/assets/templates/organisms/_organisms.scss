@@ -2510,8 +2510,125 @@ ul.nacc li p {
   }
 }
 
+.m20px {
+  margin: 20px 0;
+}
 
+.account-details-content {
 
+  &__nav-account {
+    padding: 10px 0;
+    background-color: #191e26;
+    div {      
+      
+      ul {
+        padding-left: 0;
+        display: flex;
+        margin-bottom: 0;
+        align-items: center;
+        li {
+          margin-right: 50px;
+          a {
+            color: #fff;
+            text-decoration: none;
+            transition: all .2s ease-in-out;
+            &:hover {
+              color: #82aede;
+            }
+          }
+        }
+
+        li.current-menu-item {        
+          a {
+            color: #82aede;           
+          }
+        }
+      }
+
+      a {
+        color: #fff;
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        transition: all .2s ease-in-out;
+        &:hover {
+          text-decoration: none;
+          color: #82aede;  
+        }
+
+        img {
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+
+  &__user-details {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px 0;
+    margin-bottom: 100px;
+    &__user-info {
+      label {
+        font-size: 16px;
+        font-family: 'Montserrat-Light';
+        white-space: nowrap;
+        margin-bottom: 0;
+        &:after {
+          content: url(../img/important-ico.png);
+          position: relative;
+          top: -5px;
+          margin-left: 2px;
+        }
+      }
+
+      input {
+        font-size: 16px;
+        font-family: Montserrat-Medium;
+        outline: 0;
+        border: 1px solid #eee;
+        background-color: #f8f9f7;
+        height: 30px;
+        padding-left: 20px;
+        width: 100%;
+        margin-left: 20px;
+        max-width: 440px;
+      }
+    }
+
+    h2 {
+      font-size: 26px;
+      font-family: 'Montserrat-Medium';
+      margin-bottom: 0;
+      margin-top: 80px;
+    }
+
+    &__user-private {
+      label {
+        font-size: 16px;
+        font-family: 'Montserrat-Medium';
+      }
+
+      input {
+        font-size: 16px;
+        font-family: Montserrat-Medium;
+        outline: 0;
+        border: 1px solid #eee;
+        background-color: #f8f9f7;
+        height: 30px;
+        padding-left: 20px;
+        width: 100%;        
+      }
+    }
+
+    .save-changes-btn {
+      border: none;
+      cursor: pointer;
+      font-family: 'Montserrat-Medium';
+      float: right;
+    }
+  }
+}
 
 
 
@@ -2611,6 +2728,57 @@ ul.nacc li p {
     flex-direction: column;
   }
 
+  .account-details-content__user-details__user-private {
+    label {
+      font-size: 12px;
+    }
+
+    input {
+      font-size: 12px;
+    }
+  }
+  
+  .account-details-content__user-details {
+    margin-bottom: 30px;
+  }
+  
+
+  .account-details-content__nav-account div a {
+    color: #fff; 
+    display: flex;
+    font-size: 16px;
+    margin-bottom: 12px;
+    margin-top: 12px;
+    -ms-flex-align: center;
+    align-items: center;
+    text-transform: uppercase;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.account-details-content__nav-account div ul {
+  padding-left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 0;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.account-details-content__user-details__user-info {
+  label {
+    font-size: 12px;
+  }
+
+  input {
+    font-size: 12px;
+  }
+}
+ 
+  
   .my-account__create-form form div a {
     font-size: 12px;
   }
@@ -3540,6 +3708,10 @@ ul.nacc li p {
 @media screen and (max-width: 768px) {
   .select-container>select, .courses-filter-container .filter-toolbar .form-style form input {
     max-width: none;
+  }
+
+  .account-details-content__user-details__user-info input {
+    margin-left: 0;
   }
 
   .instructors-container__wrapper__block__item {

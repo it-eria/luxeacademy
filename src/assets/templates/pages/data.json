@@ -818,5 +818,33 @@
         "bootstrap": true
       }
     }
+  },
+
+  "p-account-details": {
+    "head": {
+      "title": "Account details"
+    },  
+    "org-header-info-line": {
+      "mol-search-form": true
+    },
+    "org-nav-menu": true,
+    "mol-single-page-bg": {
+      "image": "assets/img/single-bg.jpg"
+    },
+    "org-account-details-content": {
+      "mol-title-h2-default": {
+        "title": "MY ACCOUNT"
+      }
+    },
+
+    "org-footer": true,
+    "foot": {
+      "vendor-scripts": {
+        "jquery": true,
+        "slick-slider": true,
+        "aos": false,
+        "bootstrap": true
+      }
+    }
   }
 }

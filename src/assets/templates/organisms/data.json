@@ -282,5 +282,10 @@
     }
   },
 
-  "org-reset-pass-info": true
+  "org-reset-pass-info": true,
+  "org-account-details-content": {
+    "mol-title-h2-default": {
+      "title": "MY ACCOUNT"
+    }
+  }
 }
