@@ -2413,7 +2413,50 @@ ul.nacc li p {
   }
 }
 
+.reset-pass-info {
+  background-color: #f4f4f2;
+  padding: 40px 0;
+  margin-bottom: 80px;
+  .maxw-700 {
+    width: 100%;
+    max-width: 700px;
+    .reset-content {
+      p {
+        font-size: 16px;
+        font-family: 'Montserrat-Light';
+        margin-bottom: 10px;
+      }
 
+      form {
+        margin-top: 40px;
+        input {
+          width: 100%;
+          height: 30px;
+          padding-left: 20px;
+          font-size: 16px;
+          font-family: 'Montserrat-Light';
+          margin-bottom: 15px;
+          outline: none;
+          border: none;
+        }
+
+        .reset-pass-btn {
+          width: 200px;
+          padding-left: 0;
+          text-align: center;
+          background-color:#82aede;
+          color: #fff;
+          font-size: 16px;
+          font-family: 'Montserrat-Regular';
+          text-decoration: none;
+          outline: none;
+          float: right;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
 
 
 
@@ -2528,6 +2571,25 @@ body {font-family: Arial, Helvetica, sans-serif;}
 @media all and (max-width: 992px) {
   .forum-tabs-container .naccs .grid .gc .nacc li div .current-tab-info {
     flex-direction: column;
+  }
+
+  .reset-pass-info .maxw-700 .reset-content p {
+    font-size: 12px;
+  }
+
+  .reset-pass-info .maxw-700 .reset-content form input {
+    font-size: 12px;
+    padding-left: 10px;
+  }
+
+  .reset-pass-info .maxw-700 .reset-content form .reset-pass-btn {
+    font-size: 12px;
+    width: 130px;
+  }
+
+  .reset-pass-info {
+    padding: 30px 0;
+    margin-bottom: 40px;
   }
 
   .create-account__create-form form input, .social-login p, .social-login__buttons .blue-social {

@@ -275,5 +275,7 @@
     "mol-title-h2-default": {
       "title": "Create account"
     }
-  }
+  },
+
+  "org-reset-pass-info": true
 }
