@@ -287,5 +287,11 @@
     "mol-title-h2-default": {
       "title": "MY ACCOUNT"
     }
+  },
+
+  "org-account-order-items": {
+    "mol-title-h2-default": {
+      "title": "My account"
+    }
   }
 }
