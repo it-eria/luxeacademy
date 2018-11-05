@@ -875,5 +875,34 @@
         "bootstrap": true
       }
     }
+  },
+
+  "p-404": {
+    "head": {
+      "title": "404"
+    },  
+    "org-header-info-line": {
+      "mol-search-form": true
+    },
+    "org-nav-menu": true,
+    "mol-single-page-bg": {
+      "image": "assets/img/single-bg.jpg"
+    },
+
+    "org-404-content": {
+      "mol-title-h2-default": {
+        "title": "PAGE NOT FOUND"
+      }
+    },
+
+    "org-footer": true,
+    "foot": {
+      "vendor-scripts": {
+        "jquery": true,
+        "slick-slider": true,
+        "aos": false,
+        "bootstrap": true
+      }
+    }
   }
 }

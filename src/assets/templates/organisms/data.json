@@ -293,5 +293,11 @@
     "mol-title-h2-default": {
       "title": "My account"
     }
+  },
+
+  "org-404-content": {
+    "mol-title-h2-default": {
+      "title": "PAGE NOT FOUND"
+    }
   }
 }

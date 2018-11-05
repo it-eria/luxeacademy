@@ -2710,7 +2710,33 @@ ul.nacc li p {
     } 
 }
 
+.content-404 {
+  .maxw-630px {
+    width: 100%;
+    max-width: 630px;
 
+    .title-h2-default {
+      margin-bottom: 0;
+    }
+    .style-404 {
+      font-size: 200px;
+      font-family: 'Montserrat-Medium';
+      color: #82aede;
+      text-align: center;
+      margin-bottom: 0;
+    }
+
+    p {
+      font-size: 30px;
+      font-family: 'Montserrat-Medium';
+      text-align: right;
+      a {
+        color: #82aede;
+        text-decoration: none;
+      }
+    }
+  }
+}
 
 
 
@@ -3811,6 +3837,14 @@ ul.nacc li p {
 @media screen and (max-width: 768px) {
   .select-container>select, .courses-filter-container .filter-toolbar .form-style form input {
     max-width: none;
+  }
+
+  .content-404 .maxw-630px .style-404 {
+    font-size: 130px;
+  }
+
+  .content-404 .maxw-630px p {
+    font-size: 20px;
   }
 
   .account-order-items__item {
