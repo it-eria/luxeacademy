@@ -745,8 +745,6 @@
       "image": "assets/img/single-bg.jpg"
     },
 
-   
-
     "org-create-account-container": {
       "mol-title-h2-default": {
         "title": "Create account"
@@ -779,6 +777,35 @@
     "org-reset-pass-info": {
       "mol-title-h2-default": {
         "title": "MY ACCOUNT"
+      }
+    },
+
+    "org-footer": true,
+    "foot": {
+      "vendor-scripts": {
+        "jquery": true,
+        "slick-slider": true,
+        "aos": false,
+        "bootstrap": true
+      }
+    }
+  },
+
+  "p-my-account": {
+    "head": {
+      "title": "My account"
+    },  
+    "org-header-info-line": {
+      "mol-search-form": true
+    },
+    "org-nav-menu": true,
+    "mol-single-page-bg": {
+      "image": "assets/img/single-bg.jpg"
+    },
+
+    "org-my-account-container": {
+      "mol-title-h2-default": {
+        "title": "My account"
       }
     },
 

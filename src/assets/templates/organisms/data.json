@@ -276,6 +276,11 @@
       "title": "Create account"
     }
   },
+  "org-my-account-container": {
+    "mol-title-h2-default": {
+      "title": "My account"
+    }
+  },
 
   "org-reset-pass-info": true
 }
